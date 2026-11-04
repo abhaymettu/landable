@@ -29,11 +29,11 @@ Every item from both checklists was tested on its own, 63 of 69 had enough sprea
 On the [page](https://landable.abhays-account.workers.dev), in your browser, with the same scorer as the CLI. From a terminal:
 
 ```bash
-git clone https://github.com/abhaymettu/landable && cd landable
-pnpm install && pnpm run build
-node dist/cli.js astral-sh/ruff     # any public GitHub repo, read with a blobless git fetch
-node dist/cli.js . --json           # a local checkout
+npx landable astral-sh/ruff     # any public GitHub repo, read with a blobless git fetch
+npx landable . --json           # a local checkout
 ```
+
+`npm install -g landable` keeps it around. It needs Node 20 or later and git.
 
 Each item prints its value and the file that is its evidence. The JSON endpoint is `https://landable.abhays-account.workers.dev/api/score?repo=owner/name`. It runs on Cloudflare's free tier, so GitHub's anonymous API limit there is shared and it may answer 503 (send any User-Agent; Cloudflare turns away Python's default one). The page and the CLI do not have that problem. On 20 repos the endpoint and the CLI agreed on every item, its evidence and the market scores ([analysis/agreement-local.md](analysis/agreement-local.md)).
 

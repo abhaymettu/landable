@@ -1,0 +1,36 @@
+name: release
+on:
+  push:
+    tags: ["v*"]
+permissions:
+  contents: read
+jobs:
+  # npm trusted publisher: package landable, repo abhaymettu/landable, workflow release.yml. Provenance is automatic.
+  npm:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.20.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          registry-url: "https://registry.npmjs.org"
+      - run: npm install -g npm@11.6.2
+      - run: pnpm install --frozen-lockfile && pnpm run build && pnpm test && pnpm run typecheck
+      - name: Publish unless this version is already on npm
+        run: |
+          version=$(node -p "require('./package.json').version")
+          if npm view "landable@$version" version >/dev/null 2>&1; then
+            echo "landable@$version is already on npm"
+          else
+            npm publish --access public
+          fi
+      - name: GitHub release with the npm tarball
+        run: npm pack && gh release create "$GITHUB_REF_NAME" landable-*.tgz --title "$GITHUB_REF_NAME" --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -1,6 +1,6 @@
 {
   "name": "landable",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Checks a repository against the agent-readiness items the market sells, and says which ones actually predicted an agent PR merging on 38,070 real PRs",
   "license": "MIT",
   "type": "module",

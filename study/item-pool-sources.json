@@ -1,0 +1,1177 @@
+[
+  {
+    "source": "kodus",
+    "id": "linter",
+    "name": "Linter configured",
+    "pillar": "style-linting",
+    "logic": "[src/pillars/style-linting.ts:L12-162] Pass on the first hit, in order. (1) Root exists: .eslintrc, .eslintrc.*, eslint.config.*, biome.json, biome.jsonc, .oxlintrc.json, .oxlintrc.jsonc, oxlint.config.ts, .ruff.toml, ruff.toml, .golangci.yml, .golangci.yaml, detekt.yml, .detekt.yml, detekt-config.yml, stylecop.json, .rubocop.yml, phpstan.neon, phpstan.neon.dist, psalm.xml, phpcs.xml, phpcs.xml.dist, .swiftlint.yml (L21-46). (2) package.json: joined scripts values contain 'oxlint', or dependencies/devDependencies/peerDependencies has key oxlint (L56-76). (3) build.gradle.kts or build.gradle contains substring detekt, ktlint, checkstyle, pmd or spotbugs (L79-98). (4) Exists checkstyle.xml, .checkstyle, pmd.xml, .pmd, spotbugs-exclude.xml (L101-111). (5) pom.xml contains checkstyle, maven-pmd-plugin or spotbugs (L114-119). (6) A root *.csproj (deep 1) contains Microsoft.CodeAnalysis or StyleCop.Analyzers (L122-128). (7) composer.json contains phpstan, psalm or squizlabs/php_codesniffer (L131-134). (8) Gemfile contains rubocop (L137-140). (9) Exists clippy.toml or .clippy.toml (L143-146). (10) Cargo.toml exists: auto-pass (L149-152). Not checked: pyproject [tool.ruff], .flake8, .pylintrc.",
+    "inputs": [
+      "tree (root)",
+      "package.json",
+      "build.gradle.kts",
+      "build.gradle",
+      "pom.xml",
+      "*.csproj (root)",
+      "composer.json",
+      "Gemfile"
+    ],
+    "weight": {
+      "kodus_level": 2,
+      "level_label": "Guided"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "lint-format"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "formatter",
+    "name": "Formatter configured",
+    "pillar": "style-linting",
+    "logic": "[src/pillars/style-linting.ts:L163-335] Pass on the first hit. Exists .prettierrc, .prettierrc.*, prettier.config.* (L173-178); exists .oxfmtrc.json, .oxfmtrc.jsonc, oxfmt.config.ts (L188); package.json scripts contain 'oxfmt' or deps key oxfmt (L198-218); biome.json contains substring 'formatter' (biome.jsonc read only when biome.json is absent) (L221-240); pyproject.toml contains '[tool.black]' or '[tool.ruff' (L243-256); detected type go (go.mod) auto-pass (L259-261); exists rustfmt.toml or .rustfmt.toml (L264); detected type rust (Cargo.toml) auto-pass (L269); detected type csharp (root *.csproj or *.sln) auto-pass (L274); exists .rubocop.yml (L279); Gemfile contains rubocop (L283-286); exists .php-cs-fixer.php, .php-cs-fixer.dist.php, .php_cs, .php_cs.dist (L289); exists .swiftformat (L295); build.gradle(.kts) contains ktlint, ktfmt, spotless or google-java-format (L301-317); pom.xml contains spotless, google-java-format or formatter-maven-plugin (L320-325). Detected types come from src/engine/detector.ts L47-118. Not checked: a 'prettier' key in package.json.",
+    "inputs": [
+      "tree (root)",
+      "package.json",
+      "biome.json",
+      "biome.jsonc",
+      "pyproject.toml",
+      "Gemfile",
+      "build.gradle.kts",
+      "build.gradle",
+      "pom.xml"
+    ],
+    "weight": {
+      "kodus_level": 2,
+      "level_label": "Guided"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "lint-format"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "type-checker",
+    "name": "Type checker configured",
+    "pillar": "style-linting",
+    "logic": "[src/pillars/style-linting.ts:L336-425] Auto-pass if detected types include kotlin, go, java, rust, csharp or swift (L346-358; detector.ts L47-118: go.mod, Cargo.toml, pom.xml, build.gradle, build.gradle.kts, root *.csproj/*.sln, Package.swift, or Kotlin markers in build.gradle/pom.xml L84-115). Else tsconfig.json, after stripping matches of /\\/\\/.*$|\\/\\*[\\s\\S]*?\\*\\//gm (L365-368), JSON.parses with compilerOptions.strict === true (L361-381; 'extends' not followed; a parse error falls through). Else exists mypy.ini or .mypy.ini (L384-395); setup.cfg contains '[mypy]' (L398-405); exists pyrightconfig.json (L408-415). Not checked: pyproject [tool.mypy] or [tool.pyright]. Measured quirk: the comment stripper also eats '//' inside strings and '/*...*/' spans across globs, so a tsconfig with a \"$schema\": \"https://...\" line or \"paths\": {\"@/*\"...} plus \"include\": [\"src/**/*.ts\"] fails to parse and the check fails even with strict: true (replica of the regex run on three sample configs in node).",
+    "inputs": [
+      "tree (root)",
+      "tsconfig.json",
+      "setup.cfg",
+      "build.gradle",
+      "pom.xml"
+    ],
+    "weight": {
+      "kodus_level": 3,
+      "level_label": "Structured"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "type-check"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "pre-commit-hooks",
+    "name": "Pre-commit hooks configured",
+    "pillar": "style-linting",
+    "logic": "[src/pillars/style-linting.ts:L426-468] Pass if exists .husky (file or directory), .lefthook.yml, lefthook.yml or .pre-commit-config.yaml (L435-441); else package.json has a top-level key 'lint-staged' (L451). lefthook.yaml is not checked.",
+    "inputs": [
+      "tree (root)",
+      "package.json"
+    ],
+    "weight": {
+      "kodus_level": 3,
+      "level_label": "Structured"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "editorconfig",
+    "name": "EditorConfig present",
+    "pillar": "style-linting",
+    "logic": "[src/pillars/style-linting.ts:L469-494] Pass if .editorconfig exists at root (L478).",
+    "inputs": [
+      "tree (root)"
+    ],
+    "weight": {
+      "kodus_level": 1,
+      "level_label": "Foundational"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:lint-format"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "naming-conventions",
+    "name": "Naming conventions (AI)",
+    "pillar": "style-linting",
+    "logic": "[src/pillars/style-linting.ts:L495-541] requiresLLM. Globs **/*.{ts,tsx,js,jsx,py,go,rs,kt,kts,java,cs,rb,php,swift} excluding node_modules, vendor, dist, build, target (L512-515); sends the first 30 paths and the first 3000 chars of the first 3 files to llmClient.evaluate with the prompt at L537. Default client posts to an OpenAI-compatible chat API, default model gpt-5.6-terra (src/engine/llm-client.ts L3-4, L47). Skipped and excluded from scoring without --ai (src/engine/analyzer.ts L68-75).",
+    "inputs": [
+      "tree (recursive)",
+      "3 source files (3000 chars each)",
+      "LLM call"
+    ],
+    "weight": {
+      "kodus_level": 5,
+      "level_label": "Autonomous"
+    },
+    "class": "NONDET",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "test-framework",
+    "name": "Test framework configured",
+    "pillar": "testing",
+    "logic": "[src/pillars/testing.ts:L16-209] Pass on the first hit. Root exists jest.config.*, vitest.config.*, pytest.ini, conftest.py (L25-31); any **/*_test.go ignoring node_modules, vendor (L41-45); pyproject.toml contains '[tool.pytest' (L55-56); build.gradle.kts contains kotest, junit, jupiter, kotlin.test, kotlin(\"test\") or testImplementation (L65-93); build.gradle contains junit, jupiter, kotest, kotlin.test, testng or testImplementation (L96-112); pom.xml contains junit, testng or jupiter (L115-124); Cargo.toml exists: always pass (L127-151); any **/*.csproj contains xunit, nunit, MSTest or Microsoft.NET.Test.Sdk (L154-169); exists .rspec or spec (L172); Gemfile contains rspec or minitest (L176-179); exists phpunit.xml or phpunit.xml.dist (L182); composer.json contains phpunit (L186-189); Package.swift exists: always pass (L192-199). Not checked: a 'jest' key in package.json, vite.config with test block.",
+    "inputs": [
+      "tree (recursive for *_test.go, *.csproj)",
+      "pyproject.toml",
+      "build.gradle.kts",
+      "build.gradle",
+      "pom.xml",
+      "Cargo.toml",
+      "*.csproj",
+      "Gemfile",
+      "composer.json"
+    ],
+    "weight": {
+      "kodus_level": 2,
+      "level_label": "Guided"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:test-run"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "test-files-exist",
+    "name": "Test files exist",
+    "pillar": "testing",
+    "logic": "[src/pillars/testing.ts:L210-267] Pass if fast-glob finds at least one match (dot dirs skipped) for any of: **/*.test.*, **/*.spec.*, **/test_*.py, **/*_test.go, **/*Test.kt, **/*Tests.kt, **/*Spec.kt, src/test/**/*.kt, **/*Test.java, **/*Tests.java, src/test/**/*.java, tests/**/*.rs, src/**/tests.rs, src/**/test_*.rs, **/*Test.cs, **/*Tests.cs, spec/**/*_spec.rb, test/**/test_*.rb, test/**/*_test.rb, tests/**/*Test.php, **/*Test.php, Tests/**/*Tests.swift, Tests/**/*Test.swift (L220-244), ignoring node_modules, vendor, dist, .next, build, target (L248). No ratio. Missed: *_test.py, __tests__/x.js, tests/x.py.",
+    "inputs": [
+      "tree (recursive)"
+    ],
+    "weight": {
+      "kodus_level": 2,
+      "level_label": "Guided"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:tests-ratio"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "test-script",
+    "name": "Test script defined",
+    "pillar": "testing",
+    "logic": "[src/pillars/testing.ts:L268-392] Pass on the first hit. package.json has scripts.test with any value, including npm's default 'echo \"Error: no test specified\" && exit 1' (L277-287); Makefile matches /^test\\s*:/m (L290-297); exists gradlew (L300), build.gradle.kts or build.gradle (L310), mvnw (L320), pom.xml (L330), Cargo.toml (L340), root *.sln (L350), root *.csproj (L354), Rakefile (L360); composer.json has scripts.test (L366-376); exists Package.swift (L379). Not checked: tox.ini, noxfile.py, justfile, pyproject scripts.",
+    "inputs": [
+      "tree (root)",
+      "package.json",
+      "Makefile",
+      "composer.json"
+    ],
+    "weight": {
+      "kodus_level": 2,
+      "level_label": "Guided"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "test-run"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "coverage-config",
+    "name": "Coverage configured",
+    "pillar": "testing",
+    "logic": "[src/pillars/testing.ts:L393-552] Pass on the first hit. Exists .coveragerc, .nycrc, .nycrc.* (L403-408); first jest.config.* contains 'coverage' (L418-428); first vitest.config.* contains 'coverage' (L431-441); build.gradle.kts contains jacoco, kover or kotlinx-kover (L444-460); build.gradle contains jacoco (L463-470); pom.xml contains jacoco (L473-480); exists .tarpaulin.toml or tarpaulin.toml (L483); Cargo.toml contains cargo-tarpaulin or cargo-llvm-cov (L491-498); any **/*.csproj contains coverlet.collector or coverlet.msbuild (L501-507); Gemfile contains simplecov (L510-513); phpunit.xml(.dist) contains '<coverage' or '<logging' (L516-521); composer.json contains pcov or xdebug (L523-526); any .github/workflows/*.y(a)ml contains substring 'coverage' (L529-542). Not checked: pyproject [tool.coverage].",
+    "inputs": [
+      "tree",
+      "jest.config.*",
+      "vitest.config.*",
+      "build.gradle.kts",
+      "build.gradle",
+      "pom.xml",
+      "Cargo.toml",
+      "*.csproj",
+      "Gemfile",
+      "phpunit.xml",
+      "composer.json",
+      "workflow YAML"
+    ],
+    "weight": {
+      "kodus_level": 4,
+      "level_label": "Optimized"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "e2e-tests",
+    "name": "E2E / integration tests",
+    "pillar": "testing",
+    "logic": "[src/pillars/testing.ts:L553-586] Pass if exists playwright.config.*, cypress.config.* (files), or path cypress, e2e, tests/e2e, integration (file or directory) (L562-570). Not checked: tests/integration, cypress.json.",
+    "inputs": [
+      "tree (root)"
+    ],
+    "weight": {
+      "kodus_level": 4,
+      "level_label": "Optimized"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "test-quality",
+    "name": "Test quality (AI)",
+    "pillar": "testing",
+    "logic": "[src/pillars/testing.ts:L587-636] requiresLLM. First 3 matches of 15 test globs (L605, ignoring node_modules, vendor, dist, build, target), first 4000 chars each, prompt at L632, via llmClient.evaluate. Skipped without --ai.",
+    "inputs": [
+      "tree (recursive)",
+      "3 test files",
+      "LLM call"
+    ],
+    "weight": {
+      "kodus_level": 5,
+      "level_label": "Autonomous"
+    },
+    "class": "NONDET",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "readme",
+    "name": "README with substance",
+    "pillar": "documentation",
+    "logic": "[src/pillars/documentation.ts:L12-45] First existing of README.md, readme.md, Readme.md (L21); pass if raw content length (untrimmed, JS string length) > 500 (L31). README.rst and README are not accepted.",
+    "inputs": [
+      "tree (root)",
+      "README.md"
+    ],
+    "weight": {
+      "kodus_level": 1,
+      "level_label": "Foundational"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:readme-setup"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "contributing",
+    "name": "Contributing guide",
+    "pillar": "documentation",
+    "logic": "[src/pillars/documentation.ts:L46-74] Pass if CONTRIBUTING.md exists at root or a file matches docs/contributing* (L55-59). .github/CONTRIBUTING.md is not counted.",
+    "inputs": [
+      "tree"
+    ],
+    "weight": {
+      "kodus_level": 2,
+      "level_label": "Guided"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:contributing-pr-template"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "api-docs",
+    "name": "API documentation",
+    "pillar": "documentation",
+    "logic": "[src/pillars/documentation.ts:L75-107] Pass if a root file matches openapi.* or swagger.*, a file matches docs/api*, or jsdoc.json or typedoc.json exists (L84-91).",
+    "inputs": [
+      "tree"
+    ],
+    "weight": {
+      "kodus_level": 3,
+      "level_label": "Structured"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "codeowners",
+    "name": "CODEOWNERS defined",
+    "pillar": "documentation",
+    "logic": "[src/pillars/documentation.ts:L108-137] Pass if CODEOWNERS or .github/CODEOWNERS exists (L117-121). docs/CODEOWNERS not counted.",
+    "inputs": [
+      "tree"
+    ],
+    "weight": {
+      "kodus_level": 3,
+      "level_label": "Structured"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:codeowners-issue-templates"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "ai-context",
+    "name": "AI context files",
+    "pillar": "documentation",
+    "logic": "[src/pillars/documentation.ts:L138-169] Pass if CLAUDE.md, .cursor/rules (file or directory), .cursorrules or .github/copilot-instructions.md exists (L147-153). AGENTS.md and GEMINI.md are not counted. No content or length check.",
+    "inputs": [
+      "tree"
+    ],
+    "weight": {
+      "kodus_level": 3,
+      "level_label": "Structured"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:agent-instructions"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "architecture-docs",
+    "name": "Architecture documentation",
+    "pillar": "documentation",
+    "logic": "[src/pillars/documentation.ts:L170-200] Pass if a file matches docs/architecture* or docs/adr/*, or ARCHITECTURE.md exists (L179-184).",
+    "inputs": [
+      "tree"
+    ],
+    "weight": {
+      "kodus_level": 4,
+      "level_label": "Optimized"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "readme-quality",
+    "name": "README quality (AI)",
+    "pillar": "documentation",
+    "logic": "[src/pillars/documentation.ts:L201-231] requiresLLM. First 8000 chars of README.md/readme.md/Readme.md, prompt at L227, via llmClient.evaluate. Skipped without --ai.",
+    "inputs": [
+      "README.md",
+      "LLM call"
+    ],
+    "weight": {
+      "kodus_level": 5,
+      "level_label": "Autonomous"
+    },
+    "class": "NONDET",
+    "overlaps": [
+      "partial:readme-setup"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "docs-agent-friendliness",
+    "name": "Documentation agent-friendliness (AI)",
+    "pillar": "documentation",
+    "logic": "[src/pillars/documentation.ts:L232-276] requiresLLM. First 5 matches of README.md, CONTRIBUTING.md, CLAUDE.md, .cursorrules, docs/**/*.md, ARCHITECTURE.md (L250-253), 3000 chars each, prompt at L272. Skipped without --ai.",
+    "inputs": [
+      "doc files",
+      "LLM call"
+    ],
+    "weight": {
+      "kodus_level": 5,
+      "level_label": "Autonomous"
+    },
+    "class": "NONDET",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "lock-file",
+    "name": "Lock file present",
+    "pillar": "dev-environment",
+    "logic": "[src/pillars/dev-environment.ts:L16-59] Pass if any root file exists: package-lock.json, bun.lock, bun.lockb, yarn.lock, pnpm-lock.yaml, uv.lock, poetry.lock, Pipfile.lock, go.sum, Cargo.lock, gradle.lockfile, gradle/verification-metadata.xml, packages.lock.json, Gemfile.lock, composer.lock, Package.resolved (L25-43).",
+    "inputs": [
+      "tree (root)"
+    ],
+    "weight": {
+      "kodus_level": 1,
+      "level_label": "Foundational"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:pinned-toolchain"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "containerization",
+    "name": "Containerization",
+    "pillar": "dev-environment",
+    "logic": "[src/pillars/dev-environment.ts:L60-97] Pass if exists Dockerfile, docker-compose.yml, docker-compose.yaml, .devcontainer (literal path), or any file matching **/Dockerfile, **/docker-compose.yml, **/docker-compose.yaml at any depth (no ignore list, dot dirs included), docker/Dockerfile, deploy/Dockerfile, .devcontainer/devcontainer.json (L69-81). Not checked: compose.yaml, Containerfile, Dockerfile.*, flake.nix, .devcontainer.json.",
+    "inputs": [
+      "tree (recursive)"
+    ],
+    "weight": {
+      "kodus_level": 3,
+      "level_label": "Structured"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:repro-env"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "env-documentation",
+    "name": "Environment variables documented",
+    "pillar": "dev-environment",
+    "logic": "[src/pillars/dev-environment.ts:L98-128] Pass if .env.example, .env.template or .env.sample exists at root (L107-112).",
+    "inputs": [
+      "tree (root)"
+    ],
+    "weight": {
+      "kodus_level": 2,
+      "level_label": "Guided"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "env-example"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "setup-script",
+    "name": "Setup script or dev command",
+    "pillar": "dev-environment",
+    "logic": "[src/pillars/dev-environment.ts:L129-218] Pass on the first hit. Makefile matches /^(setup|install)\\s*:/m (L139-148); a file matches scripts/setup* (L151); exists gradlew (L161) or mvnw (L171); a root *.sln (L181); exists Rakefile (L191); package.json has scripts.dev (L201).",
+    "inputs": [
+      "tree (root)",
+      "Makefile",
+      "package.json"
+    ],
+    "weight": {
+      "kodus_level": 2,
+      "level_label": "Guided"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "version-pinned",
+    "name": "Runtime version pinned",
+    "pillar": "dev-environment",
+    "logic": "[src/pillars/dev-environment.ts:L219-285] Pass if any root file exists: .nvmrc, .node-version, .python-version, .tool-versions, .mise.toml, go.mod, .sdkmanrc, .java-version, gradle.properties, rust-toolchain.toml, rust-toolchain, .ruby-version, .php-version, .swift-version, global.json (L228-245); else package.json packageManager starts with 'bun@' or engines.bun is a string (L254-275). go.mod and gradle.properties pass with no version line; engines.node and packageManager pnpm@/yarn@ do not pass.",
+    "inputs": [
+      "tree (root)",
+      "package.json"
+    ],
+    "weight": {
+      "kodus_level": 2,
+      "level_label": "Guided"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:pinned-toolchain"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "ci-config",
+    "name": "CI configuration present",
+    "pillar": "ci-cd",
+    "logic": "[src/pillars/ci-cd.ts:L43-76] Pass if any exists: .github/workflows/*.yml, .github/workflows/*.yaml, .gitlab-ci.yml, .circleci/config.yml, Jenkinsfile, .travis.yml (L52-60). No trigger (on: pull_request) parsing.",
+    "inputs": [
+      "tree"
+    ],
+    "weight": {
+      "kodus_level": 2,
+      "level_label": "Guided"
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:ci-pr"
+    ]
+  },
+  {
+    "source": "kodus",
+    "id": "ci-runs-tests",
+    "name": "CI runs tests",
+    "pillar": "ci-cd",
+    "logic": "[src/pillars/ci-cd.ts:L77-116] Reads every CI file in the set .github/workflows/*.yml, .github/workflows/*.yaml, .gitlab-ci.yml, .circleci/config.yml, Jenkinsfile, .travis.yml (getCIConfigContents L9-34). Pass if any content matches /\\b(npm\\s+test|yarn\\s+test|pnpm\\s+test|bun\\s+test|jest|vitest|pytest|go\\s+test|make\\s+test|npm\\s+run\\s+test|gradle\\s+test|\\.\\/gradlew\\s+test|gradlew\\s+test|gradle\\s+check|\\.\\/gradlew\\s+check|mvn\\s+test|\\.\\/mvnw\\s+test|mvn\\s+verify|\\.\\/mvnw\\s+verify|cargo\\s+test|dotnet\\s+test|bundle\\s+exec\\s+r(ake|spec)|phpunit|composer\\s+test|swift\\s+test)\\b/i (L96). Fail with no CI files.",
+    "inputs": [
+      "CI files (workflow YAML etc.)"
+    ],
+    "weight": {
+      "kodus_level": 3,
+      "level_label": "Structured"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "ci-runs-linters",
+    "name": "CI runs linters",
+    "pillar": "ci-cd",
+    "logic": "[src/pillars/ci-cd.ts:L117-156] Same CI file set. Pass if any content matches /\\b(npm\\s+run\\s+lint|yarn\\s+lint|pnpm\\s+lint|bun\\s+run\\s+lint|eslint|biome\\s+check|biome\\s+lint|oxlint|oxfmt|ruff\\s+check|ruff\\s+lint|golangci-lint|make\\s+lint|gradle\\s+ktlintCheck|\\.\\/gradlew\\s+ktlintCheck|gradle\\s+detekt|\\.\\/gradlew\\s+detekt|gradle\\s+ktfmtCheck|\\.\\/gradlew\\s+ktfmtCheck|\\.\\/gradlew\\s+spotlessCheck|gradle\\s+spotlessCheck|mvn\\s+checkstyle|\\.\\/mvnw\\s+checkstyle|mvn\\s+pmd|cargo\\s+clippy|cargo\\s+fmt\\s+--check|dotnet\\s+format|rubocop|phpstan|psalm|phpcs|swiftlint)\\b/i (L136).",
+    "inputs": [
+      "CI files (workflow YAML etc.)"
+    ],
+    "weight": {
+      "kodus_level": 3,
+      "level_label": "Structured"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "build-automated",
+    "name": "Build automated",
+    "pillar": "ci-cd",
+    "logic": "[src/pillars/ci-cd.ts:L157-212] Pass if package.json has scripts.build (L167-177); else any CI file matches /\\b(npm\\s+run\\s+build|yarn\\s+build|pnpm\\s+build|bun\\s+run\\s+build|make\\s+build|go\\s+build|cargo\\s+build|docker\\s+build|gradle\\s+build|\\.\\/gradlew\\s+build|gradle\\s+assemble|\\.\\/gradlew\\s+assemble|mvn\\s+package|mvn\\s+install|\\.\\/mvnw\\s+package|\\.\\/mvnw\\s+install|mvn\\s+compile|python\\s+-m\\s+build|poetry\\s+build|dotnet\\s+build|dotnet\\s+publish|swift\\s+build|xcodebuild)\\b/i (L182); else Makefile matches /^build\\s*:/m (L195-202).",
+    "inputs": [
+      "package.json",
+      "CI files",
+      "Makefile"
+    ],
+    "weight": {
+      "kodus_level": 3,
+      "level_label": "Structured"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "deploy-pipeline",
+    "name": "Deploy pipeline",
+    "pillar": "ci-cd",
+    "logic": "[src/pillars/ci-cd.ts:L213-266] Pass if any CI file matches /\\b(deploy|deployment|publish|release|cd\\s*:)\\b/i (L223-234); else exists vercel.json, netlify.toml, fly.toml, railway.json, render.yaml, app.yaml, serverless.yml, serverless.yaml, terraform, pulumi (L237-249). The regex fires on any mention, for example a 'release' job name or 'publish' in a comment.",
+    "inputs": [
+      "CI files",
+      "tree (root)"
+    ],
+    "weight": {
+      "kodus_level": 4,
+      "level_label": "Optimized"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "branch-protection",
+    "name": "Branch protection awareness",
+    "pillar": "ci-cd",
+    "logic": "[src/pillars/ci-cd.ts:L267-336] No GitHub API call. Pass if the first existing of .github/branch-protection* (glob), .github/settings.yml, .github/settings.yaml matches /branch.?protection|protected.?branch/i (L277-295); else CONTRIBUTING.md matches /branch.?protection|protected.?branch|required.?review/i (L298-313); else .github/settings.yml matches /branches:/i (L316-326).",
+    "inputs": [
+      ".github/branch-protection*",
+      ".github/settings.yml",
+      "CONTRIBUTING.md"
+    ],
+    "weight": {
+      "kodus_level": 4,
+      "level_label": "Optimized"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "no-outdated-deps",
+    "name": "Dependencies recently updated",
+    "pillar": "code-health",
+    "logic": "[src/pillars/code-health.ts:L19-105] As written: walks package-lock.json, bun.lock, bun.lockb, yarn.lock, pnpm-lock.yaml, uv.lock, gradle.lockfile, build.gradle.kts, build.gradle, poetry.lock, Pipfile.lock, go.sum, Cargo.lock, packages.lock.json, Gemfile.lock, composer.lock, Package.resolved in order (L29-47); the FIRST one present decides: pass iff filesystem mtime is within 6*30 days of Date.now() (L49-70, SIX_MONTHS_MS L10). No listed file and no manifest (package.json, build.gradle.kts, build.gradle, pom.xml, pyproject.toml, go.mod, Cargo.toml, *.csproj, Gemfile, composer.json, Package.swift): skipped and excluded (L74-95); manifest without one: fail (L97-103). On a fresh clone mtime is checkout time, so it always passes when a listed file exists. Deterministic port: replace mtime with the committer date of the last commit touching that path (local git log -1 --format=%cI -- <path>, or GitHub GET /repos/{owner}/{repo}/commits?path=<path>&sha=<snapshot>&per_page=1, field commit.committer.date) and Date.now() with the snapshot commit date.",
+    "inputs": [
+      "tree (root)",
+      "commit history for the first lockfile (git log or GitHub commits API)"
+    ],
+    "weight": {
+      "kodus_level": 3,
+      "level_label": "Structured"
+    },
+    "class": "DET-API",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "dead-code-detection",
+    "name": "Dead code detection configured",
+    "pillar": "code-health",
+    "logic": "[src/pillars/code-health.ts:L106-288] Pass on the first hit. Exists knip.json, knip.ts, knip.config.ts, .knip.json (L116-122); a root file matches .deadcode* (L132); detekt.yml, .detekt.yml or detekt-config.yml contains UnusedPrivateMember (L142-152); build.gradle(.kts) contains detekt (L155-164); pyproject.toml contains vulture (L167-174); exists .vulture_whitelist.py or vulture_whitelist.py (L175); Cargo.toml contains cargo-udeps (L185-192); any **/*.csproj contains Roslynator (L195-205); Gemfile contains debride or reek (L208-215); composer.json contains phpmd (L218-225); pom.xml contains spotbugs or findbugs (L228-235); package.json has scripts.knip (L238); .eslintrc, .eslintrc.js, .eslintrc.cjs, .eslintrc.json, .eslintrc.yml or .eslintrc.yaml contains unused-exports (L248-265); first eslint.config.* contains unused-exports (L268-278). knip only in devDependencies is not detected.",
+    "inputs": [
+      "tree",
+      "detekt yml",
+      "build.gradle(.kts)",
+      "pyproject.toml",
+      "Cargo.toml",
+      "*.csproj",
+      "Gemfile",
+      "composer.json",
+      "pom.xml",
+      "package.json",
+      "eslint configs"
+    ],
+    "weight": {
+      "kodus_level": 4,
+      "level_label": "Optimized"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "bundle-analysis",
+    "name": "Bundle analysis configured",
+    "pillar": "code-health",
+    "logic": "[src/pillars/code-health.ts:L289-363] Pass if package.json dependencies or devDependencies has key webpack-bundle-analyzer, @next/bundle-analyzer, size-limit, @size-limit/preset-small-lib, @size-limit/preset-app, bundlewatch or bundlephobia (L299-328); else exists .size-limit.json, .size-limit.js, .size-limit.cjs (L331-343); else package.json has top-level key size-limit (L346-353). Without --ai this is the only counted Level 5 criterion.",
+    "inputs": [
+      "package.json",
+      "tree (root)"
+    ],
+    "weight": {
+      "kodus_level": 5,
+      "level_label": "Autonomous"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "license",
+    "name": "License file present",
+    "pillar": "security",
+    "logic": "[src/pillars/security.ts:L12-45] Pass if LICENSE, LICENSE.md, LICENSE.txt, LICENCE, LICENCE.md or LICENCE.txt exists at root (L21-29). COPYING not accepted.",
+    "inputs": [
+      "tree (root)"
+    ],
+    "weight": {
+      "kodus_level": 1,
+      "level_label": "Foundational"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "security-scanning",
+    "name": "Security scanning in CI",
+    "pillar": "security",
+    "logic": "[src/pillars/security.ts:L46-194] Pass on the first hit. Any .github/workflows/*.y(a)ml matches /\\b(codeql|snyk|trivy|semgrep|sonarqube|sonarcloud|dependabot|security[_-]scan|sast)\\b/i (L56-73); exists .snyk (L76); .gitlab-ci.yml matches the same regex (L86-93); build.gradle(.kts) contains org.owasp.dependencycheck or dependency-check (L96-110); pom.xml contains dependency-check or owasp (L113-120); exists .cargo-audit.toml (L123); a workflow matches /\\bcargo[\\s-]audit\\b/i (L132-145); any **/*.csproj contains Microsoft.CodeAnalysis.NetAnalyzers or SecurityCodeScan (L148-161); Gemfile contains brakeman or bundler-audit (L164-171); composer.json contains roave/security-advisories or enlightn/security-checker (L174-184). A workflow that only mentions 'dependabot' (auto-merge) passes; .github/dependabot.yml alone does not.",
+    "inputs": [
+      "workflow YAML",
+      ".gitlab-ci.yml",
+      "build.gradle(.kts)",
+      "pom.xml",
+      "*.csproj",
+      "Gemfile",
+      "composer.json",
+      "tree"
+    ],
+    "weight": {
+      "kodus_level": 4,
+      "level_label": "Optimized"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "secrets-detection",
+    "name": "Secrets detection configured",
+    "pillar": "security",
+    "logic": "[src/pillars/security.ts:L195-263] Pass if .gitleaks.toml exists (L205); else .pre-commit-config.yaml contains detect-secrets or gitleaks (L215-231); else a .github/workflows/*.y(a)ml matches /\\b(gitleaks|detect-secrets|trufflehog|git-secrets)\\b/i (L234-253).",
+    "inputs": [
+      "tree (root)",
+      ".pre-commit-config.yaml",
+      "workflow YAML"
+    ],
+    "weight": {
+      "kodus_level": 4,
+      "level_label": "Optimized"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "security-policy",
+    "name": "Security policy",
+    "pillar": "security",
+    "logic": "[src/pillars/security.ts:L264-293] Pass if SECURITY.md or .github/SECURITY.md exists (L273-277).",
+    "inputs": [
+      "tree"
+    ],
+    "weight": {
+      "kodus_level": 3,
+      "level_label": "Structured"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "kodus",
+    "id": "dep-update-automation",
+    "name": "Dependency update automation",
+    "pillar": "security",
+    "logic": "[src/pillars/security.ts:L294-344] Pass if .github/dependabot.yml, .github/dependabot.yaml, renovate.json, .renovaterc or .renovaterc.json exists (L303-310); else build.gradle(.kts) contains com.github.ben-manes.versions or version-catalog-update (L320-334). Not checked: renovate.json5, .github/renovate.json.",
+    "inputs": [
+      "tree",
+      "build.gradle(.kts)"
+    ],
+    "weight": {
+      "kodus_level": 3,
+      "level_label": "Structured"
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "afc",
+    "id": "agents_md",
+    "name": "AGENTS.md / CLAUDE.md",
+    "pillar": "agent-files",
+    "logic": "[lib/scoring/signals/agents-md.ts:L5-82] Candidates in order AGENTS.md, CLAUDE.md, AGENT.md, .claude/CLAUDE.md, .claude/AGENTS.md (L5), case-insensitive, file or directory (firstExisting). The first candidate with non-empty trimmed content wins, else the first one that exists (L19-34). Graded on that file's trimmed length: 0 if missing; 0.2 if trimmed content is empty; 0.5 if trimmed length < 200; 0.8 if < 800; 1 otherwise (L36-81). .github/copilot-instructions.md is not read by any AFC signal.",
+    "inputs": [
+      "tree",
+      "AGENTS.md",
+      "CLAUDE.md",
+      "AGENT.md",
+      ".claude/CLAUDE.md",
+      ".claude/AGENTS.md"
+    ],
+    "weight": {
+      "claude-code": 1.0,
+      "cursor": 0.8,
+      "devin": 0.6,
+      "gpt-5-codex": 0.9,
+      "kimi-cli": 1.0,
+      "gemini-cli": 0.7,
+      "aider": 0.3,
+      "openhands": 0.5,
+      "pi": 1.0
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:agent-instructions"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "cursor_rules",
+    "name": "Cursor rules (.cursor/rules)",
+    "pillar": "agent-files",
+    "logic": "[lib/scoring/signals/cursor-rules.ts:L12-96] Finds every .cursor/rules directory at root and in subdirectories down to depth 3, skipping node_modules, .git, vendor, target and .cursor (L12-14, L38-54); collects *.mdc files (extension case-insensitive) inside each, recursing 3 subfolder levels (L25-35). 1 if any .mdc; else 0.5 if .cursorrules exists at root (L79-88); else 0. .md files in .cursor/rules do not count. No content read.",
+    "inputs": [
+      "tree"
+    ],
+    "weight": {
+      "claude-code": 0.0,
+      "cursor": 1.0,
+      "devin": 0.3,
+      "gpt-5-codex": 0.0,
+      "kimi-cli": 0.0,
+      "gemini-cli": 0.0,
+      "aider": 0.0,
+      "openhands": 0.0,
+      "pi": 0.0
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:agent-instructions"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "gemini_md",
+    "name": "GEMINI.md",
+    "pillar": "agent-files",
+    "logic": "[lib/scoring/signals/gemini-md.ts:L10-83] GEMINI.md at root only (L34). Lines of the form '@AGENTS.md', '@CLAUDE.md' or '@AGENT.md' (own line, optional ./, outside fenced code blocks) are replaced by that file's content before measuring (L10-25). Graded on trimmed length: 0 if missing; 0.2 if trimmed content is empty; 0.5 if trimmed length < 200; 0.8 if < 800; 1 otherwise (L45-81).",
+    "inputs": [
+      "tree",
+      "GEMINI.md",
+      "AGENTS.md",
+      "CLAUDE.md",
+      "AGENT.md"
+    ],
+    "weight": {
+      "claude-code": 0.0,
+      "cursor": 0.0,
+      "devin": 0.0,
+      "gpt-5-codex": 0.0,
+      "kimi-cli": 0.0,
+      "gemini-cli": 1.0,
+      "aider": 0.0,
+      "openhands": 0.0,
+      "pi": 0.0
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:agent-instructions"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "openhands_setup",
+    "name": ".openhands/setup.sh",
+    "pillar": "agent-files",
+    "logic": "[lib/scoring/signals/openhands-setup.ts:L6-45] .openhands/setup.sh (L7, L16): 0 if missing; 0.2 if trimmed content is empty; 1 otherwise (L18-44).",
+    "inputs": [
+      "tree",
+      ".openhands/setup.sh"
+    ],
+    "weight": {
+      "claude-code": 0.0,
+      "cursor": 0.0,
+      "devin": 0.0,
+      "gpt-5-codex": 0.0,
+      "kimi-cli": 0.0,
+      "gemini-cli": 0.0,
+      "aider": 0.0,
+      "openhands": 1.0,
+      "pi": 0.0
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:repro-env"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "aider_conf",
+    "name": ".aider.conf.yml",
+    "pillar": "agent-files",
+    "logic": "[lib/scoring/signals/aider-conf.ts:L9-64] .aider.conf.yml at root, .yml spelling only (L9). 0 if missing; 0.2 if empty; 1 if content matches any of /^(?:test|lint)-cmd[ \\t]*:[ \\t]*[^\\s#]/m, /^auto-test[ \\t]*:[ \\t]*true\\b/im, /^read[ \\t]*:[ \\t]*(?:[^\\s#[]|\\[[ \\t]*[^\\s\\]]|\\r?\\n[ \\t]+-[ \\t]*\\S)/m (L12-16); else 0.5 (L47-55).",
+    "inputs": [
+      "tree",
+      ".aider.conf.yml"
+    ],
+    "weight": {
+      "claude-code": 0.0,
+      "cursor": 0.0,
+      "devin": 0.0,
+      "gpt-5-codex": 0.0,
+      "kimi-cli": 0.0,
+      "gemini-cli": 0.0,
+      "aider": 1.0,
+      "openhands": 0.0,
+      "pi": 0.0
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:agent-instructions",
+      "partial:test-run"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "agent_skills",
+    "name": "Skills (.agents/skills)",
+    "pillar": "agent-files",
+    "logic": "[lib/scoring/signals/agent-skills.ts:L11-48] 1 if .agents/skills is a directory with at least one child <name>/SKILL.md file (case-insensitive) (L18-39); else 0. Presence only. .claude/skills is not counted.",
+    "inputs": [
+      "tree"
+    ],
+    "weight": {
+      "claude-code": 0.0,
+      "cursor": 0.4,
+      "devin": 0.4,
+      "gpt-5-codex": 0.4,
+      "kimi-cli": 0.4,
+      "gemini-cli": 0.4,
+      "aider": 0.0,
+      "openhands": 0.4,
+      "pi": 0.4
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:agent-instructions"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "readme",
+    "name": "README",
+    "pillar": "repo-basics",
+    "logic": "[lib/scoring/signals/readme.ts:L4-52] First of README.md, README.rst, README.txt, README (case-insensitive) (L4, L13). 0 if none; trimmed length < 200 is 0.3; < 1000 is 0.7; otherwise 1 (L24-51). No section or setup-step parsing.",
+    "inputs": [
+      "tree",
+      "README.*"
+    ],
+    "weight": {
+      "claude-code": 0.7,
+      "cursor": 1.0,
+      "devin": 0.7,
+      "gpt-5-codex": 0.8,
+      "kimi-cli": 0.7,
+      "gemini-cli": 0.9,
+      "aider": 0.6,
+      "openhands": 0.7,
+      "pi": 0.7
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:readme-setup"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "tests",
+    "name": "Test suite",
+    "pillar": "repo-basics",
+    "logic": "[lib/scoring/signals/tests.ts:L6-52] 1 if any root directory tests, test, __tests__, spec, specs or src/test exists (case-insensitive) (L6, L17-33); else 0.7 if a walk of depth <= 3 (skipping node_modules, .git, vendor, target; helpers.ts L220-263) finds a path matching /(^|\\/)(.*\\.test\\.|.*\\.spec\\.|test_.*\\.py$|.*_test\\.go$|.*_test\\.rs$|.*Test\\.java$|.*Tests?\\.kt$|.*_test\\.exs$|.*_test\\.dart$|.*Spec\\.scala$|.*Test\\.scala$|.*Test\\.php$|.*_test\\.rb$|.*_spec\\.rb$|.*Tests?\\.cs$)/ (L7-8, L35-44); else 0. No ratio. A 'tests' directory that is empty still scores 1.",
+    "inputs": [
+      "tree (depth 3)"
+    ],
+    "weight": {
+      "claude-code": 1.0,
+      "cursor": 0.7,
+      "devin": 0.9,
+      "gpt-5-codex": 0.8,
+      "kimi-cli": 0.9,
+      "gemini-cli": 0.9,
+      "aider": 1.0,
+      "openhands": 0.9,
+      "pi": 0.9
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:tests-ratio"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "ci",
+    "name": "CI configuration",
+    "pillar": "repo-basics",
+    "logic": "[lib/scoring/signals/ci.ts:L7-62] 1 if .github/workflows is a directory containing at least one file named *.yml or *.yaml (L23-43); else 0.9 if any of .gitlab-ci.yml, .circleci/config.yml, azure-pipelines.yml, .travis.yml, Jenkinsfile, .buildkite/pipeline.yml exists (L7-14, L45-54); else 0. No trigger or job parsing.",
+    "inputs": [
+      "tree"
+    ],
+    "weight": {
+      "claude-code": 0.5,
+      "cursor": 0.4,
+      "devin": 0.7,
+      "gpt-5-codex": 0.7,
+      "kimi-cli": 0.4,
+      "gemini-cli": 0.6,
+      "aider": 0.3,
+      "openhands": 1.0,
+      "pi": 0.4
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:ci-pr"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "linter",
+    "name": "Linter / formatter config",
+    "pillar": "repo-basics",
+    "logic": "[lib/scoring/signals/linter.ts:L6-93] 1 if any root path exists (case-insensitive, file or directory): .eslintrc, .eslintrc.js, .eslintrc.json, .eslintrc.cjs, eslint.config.js, eslint.config.mjs, .prettierrc, .prettierrc.json, .prettierrc.js, prettier.config.js, ruff.toml, .ruff.toml, .pylintrc, .flake8, setup.cfg, rustfmt.toml, .rustfmt.toml, clippy.toml, .golangci.yml, .golangci.yaml, biome.json, .biome.json, .rubocop.yml, .standard.yml, .swiftlint.yml, .swiftformat, .swift-format, detekt.yml, config/detekt/detekt.yml, .scalafmt.conf, phpstan.neon, phpstan.neon.dist, psalm.xml, psalm.xml.dist, .php-cs-fixer.dist.php, .php-cs-fixer.php, .credo.exs, .formatter.exs, stylua.toml, .stylua.toml, checkstyle.xml, config/checkstyle/checkstyle.xml, analysis_options.yaml, .clang-format, .clang-tidy, .clj-kondo/config.edn (L6-53); else 1 if pyproject.toml matches /\\[tool\\.(ruff|black|flake8|pylint|mypy)/ (L55, L76-85); else 0. A bare setup.cfg passes; eslint.config.ts/.cjs and biome.jsonc do not.",
+    "inputs": [
+      "tree (root)",
+      "pyproject.toml"
+    ],
+    "weight": {
+      "claude-code": 0.6,
+      "cursor": 0.8,
+      "devin": 0.5,
+      "gpt-5-codex": 0.6,
+      "kimi-cli": 0.6,
+      "gemini-cli": 0.7,
+      "aider": 1.0,
+      "openhands": 0.6,
+      "pi": 0.8
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "lint-format"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "deps_manifest",
+    "name": "Dependency manifest",
+    "pillar": "repo-basics",
+    "logic": "[lib/scoring/signals/deps-manifest.ts:L7-92] 1 if any is a file at root: package.json, pnpm-lock.yaml, yarn.lock, pyproject.toml, requirements.txt, Pipfile, poetry.lock, Cargo.toml, go.mod, Gemfile, composer.json, pubspec.yaml, build.gradle, build.gradle.kts, build.sbt, pom.xml, mix.exs, Package.swift, deps.edn, project.clj, stack.yaml, dune-project, rebar.config, shard.yml, build.zig, CMakeLists.txt, meson.build, conanfile.txt, conanfile.py, vcpkg.json (L7-38, firstFile L63); else 1 if a root entry matches /\\.(csproj|fsproj|vbproj|sln)$/i, /\\.cabal$/i or /\\.nimble$/i (L40-54); else 0. Presence of a manifest, not of a lockfile.",
+    "inputs": [
+      "tree (root)"
+    ],
+    "weight": {
+      "claude-code": 0.7,
+      "cursor": 0.8,
+      "devin": 0.9,
+      "gpt-5-codex": 0.7,
+      "kimi-cli": 0.7,
+      "gemini-cli": 0.8,
+      "aider": 0.7,
+      "openhands": 1.0,
+      "pi": 0.7
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:pinned-toolchain"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "dev_env",
+    "name": "Reproducible dev env",
+    "pillar": "repo-basics",
+    "logic": "[lib/scoring/signals/dev-env.ts:L6-79] Counts distinct existing paths (case-insensitive, file or directory) among Makefile, .devcontainer/devcontainer.json, .devcontainer.json, flake.nix, shell.nix, Dockerfile, docker-compose.yml, docker-compose.yaml, compose.yml, compose.yaml, justfile, Taskfile.yml, tox.ini, noxfile.py, mvnw, gradlew, bin/setup, .devin/blueprint.yaml, .cursor/environment.json (L6-26, L34). >= 2 is 1; exactly 1 is 0.7 (L36-54); else 0.6 if package.json parses and scripts has >= 3 keys (L56-71); else 0.",
+    "inputs": [
+      "tree (root)",
+      "package.json"
+    ],
+    "weight": {
+      "claude-code": 0.9,
+      "cursor": 0.5,
+      "devin": 1.0,
+      "gpt-5-codex": 0.7,
+      "kimi-cli": 0.7,
+      "gemini-cli": 0.7,
+      "aider": 0.5,
+      "openhands": 1.0,
+      "pi": 0.6
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:repro-env"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "type_config",
+    "name": "Type configuration",
+    "pillar": "repo-basics",
+    "logic": "[lib/scoring/signals/type-config.ts:L7-94] 1 if tsconfig.json, jsconfig.json, mypy.ini, .mypy.ini or pyrightconfig.json is a root file (L7, L55); else 1 if pyproject.toml matches /\\[tool\\.(mypy|pyright)/ (L8, L67-76); else 1 if a typed-language marker is a root file: Cargo.toml, go.mod, pom.xml, build.gradle, build.gradle.kts, build.sbt, Package.swift, global.json, dune-project, stack.yaml, build.zig (L10-22), or a root entry matches /\\.(csproj|fsproj|vbproj|sln)$/i or /\\.cabal$/i (L24-27, L29-46); else 0. No strict-mode check.",
+    "inputs": [
+      "tree (root)",
+      "pyproject.toml"
+    ],
+    "weight": {
+      "claude-code": 0.6,
+      "cursor": 1.0,
+      "devin": 0.5,
+      "gpt-5-codex": 0.7,
+      "kimi-cli": 0.6,
+      "gemini-cli": 0.9,
+      "aider": 0.5,
+      "openhands": 0.5,
+      "pi": 0.6
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "type-check"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "license",
+    "name": "License file",
+    "pillar": "repo-basics",
+    "logic": "[lib/scoring/signals/license.ts:L4-30] 1 if LICENSE, LICENSE.md, LICENSE.txt, COPYING or COPYING.md exists at root (case-insensitive) (L4, L12); else 0. LICENCE spelling not accepted.",
+    "inputs": [
+      "tree (root)"
+    ],
+    "weight": {
+      "claude-code": 0.3,
+      "cursor": 0.3,
+      "devin": 0.3,
+      "gpt-5-codex": 0.3,
+      "kimi-cli": 0.3,
+      "gemini-cli": 0.3,
+      "aider": 0.2,
+      "openhands": 0.4,
+      "pi": 0.2
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "afc",
+    "id": "contributing",
+    "name": "CONTRIBUTING guide",
+    "pillar": "repo-basics",
+    "logic": "[lib/scoring/signals/contributing.ts:L4-41] 1 if CONTRIBUTING.md, .rst, .adoc or bare CONTRIBUTING exists at root, .github/ or docs/ (case-insensitive) (L4-15, L23); else 0. No PR template check.",
+    "inputs": [
+      "tree"
+    ],
+    "weight": {
+      "claude-code": 0.4,
+      "cursor": 0.3,
+      "devin": 0.5,
+      "gpt-5-codex": 0.4,
+      "kimi-cli": 0.4,
+      "gemini-cli": 0.4,
+      "aider": 0.3,
+      "openhands": 0.7,
+      "pi": 0.3
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:contributing-pr-template"
+    ]
+  },
+  {
+    "source": "afc",
+    "id": "pre_commit",
+    "name": "Pre-commit / git hooks",
+    "pillar": "repo-basics",
+    "logic": "[lib/scoring/signals/pre-commit.ts:L4-31] 1 if .pre-commit-config.yaml, .husky, lefthook.yml or lefthook.yaml exists (L4, L13); else 0.",
+    "inputs": [
+      "tree (root)"
+    ],
+    "weight": {
+      "claude-code": 0.4,
+      "cursor": 0.3,
+      "devin": 0.5,
+      "gpt-5-codex": 0.4,
+      "kimi-cli": 0.4,
+      "gemini-cli": 0.4,
+      "aider": 0.3,
+      "openhands": 0.6,
+      "pi": 0.4
+    },
+    "class": "DET-TREE",
+    "overlaps": []
+  },
+  {
+    "source": "afc",
+    "id": "size",
+    "name": "Manageable size",
+    "pillar": "repo-basics",
+    "logic": "[lib/scoring/signals/size.ts:L8-109] Counts files by walking from root (L25-66): skips every entry whose name starts with '.', skips paths ignored by a node-ignore matcher built from [node_modules, .git, vendor, target, dist, build, .next] plus the root .gitignore content (L8, L19-21, L50), max depth 8 (L10), stops past 10000 (L9). Score: < 50 files is 0.9; < 500 is 1; < 2000 is 0.8; < 5000 is 0.5; otherwise 0.2 (L67-107). Non-monotone at the small end.",
+    "inputs": [
+      "tree (recursive)",
+      ".gitignore"
+    ],
+    "weight": {
+      "claude-code": 0.5,
+      "cursor": 0.4,
+      "devin": 0.6,
+      "gpt-5-codex": 0.5,
+      "kimi-cli": 0.4,
+      "gemini-cli": 0.5,
+      "aider": 0.4,
+      "openhands": 0.7,
+      "pi": 0.5
+    },
+    "class": "DET-TREE",
+    "overlaps": [
+      "partial:complexity"
+    ]
+  }
+]

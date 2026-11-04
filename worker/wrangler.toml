@@ -1,0 +1,20 @@
+name = "landable"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+workers_dev = true
+
+# Free tier only: a KV cache of results (24 h per commit) and a per-address limit on live checks.
+[[kv_namespaces]]
+binding = "CACHE"
+id = "eec42b344e7c41fba0e0a27691a3428d"
+
+[[ratelimits]]
+name = "LIMITER"
+namespace_id = "1001"
+simple = { limit = 10, period = 60 }
+
+# The browser half of the checker, built by `pnpm run build:worker`, is served as text at /check.js.
+[[rules]]
+type = "Text"
+globs = ["**/*.txt"]
+fallthrough = false

@@ -1,0 +1,978 @@
+{
+ "repos": 8003,
+ "reposTrain": 5628,
+ "reposHoldout": 2375,
+ "prs": 38070,
+ "tested": 63,
+ "retained": 2,
+ "h1": {
+  "baseline": 0.6682,
+  "withScore": 0.674,
+  "diff": {
+   "est": 0.0058,
+   "lo": -0.0017,
+   "hi": 0.0137
+  },
+  "verdict": "does not hold."
+ },
+ "h2": {
+  "score": 0.5199,
+  "mergeRate": 0.6143,
+  "diff": {
+   "est": -0.0944,
+   "lo": -0.1427,
+   "hi": -0.046
+  }
+ },
+ "market": [
+  {
+   "score": "kodus_share",
+   "or": {
+    "est": 1.09,
+    "lo": 0.95,
+    "hi": 1.24
+   },
+   "aucGain": {
+    "est": 0.0001,
+    "lo": -0.0019,
+    "hi": 0.002
+   },
+   "prs": 10914
+  },
+  {
+   "score": "kodus_level",
+   "or": {
+    "est": 0.92,
+    "lo": 0.8,
+    "hi": 1.05
+   },
+   "aucGain": {
+    "est": -0.0008,
+    "lo": -0.0029,
+    "hi": 0.0005
+   },
+   "prs": 10914
+  },
+  {
+   "score": "afc_overall",
+   "or": {
+    "est": 1.04,
+    "lo": 0.91,
+    "hi": 1.19
+   },
+   "aucGain": {
+    "est": 0.0003,
+    "lo": -0.0013,
+    "hi": 0.0019
+   },
+   "prs": 10914
+  },
+  {
+   "score": "afc_agent",
+   "or": {
+    "est": 1.12,
+    "lo": 0.97,
+    "hi": 1.3
+   },
+   "aucGain": {
+    "est": 0.0019,
+    "lo": 0,
+    "hi": 0.004
+   },
+   "prs": 9076
+  }
+ ],
+ "items": [
+  {
+   "id": "A01.test_command",
+   "share": 0.678,
+   "or": {
+    "est": 0.92,
+    "lo": 0.77,
+    "hi": 1.1
+   },
+   "q": 0.709,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A02.ci_on_pr",
+   "share": 0.786,
+   "or": {
+    "est": 1.06,
+    "lo": 0.88,
+    "hi": 1.28
+   },
+   "q": 0.866,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A03.agent_instructions",
+   "share": 0.33,
+   "or": {
+    "est": 1.38,
+    "lo": 1.2,
+    "hi": 1.57
+   },
+   "q": 0.00012,
+   "status": "dropped (sign flip)",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A04.contributing",
+   "share": 0.519,
+   "or": {
+    "est": 0.98,
+    "lo": 0.85,
+    "hi": 1.12
+   },
+   "q": 0.907,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A05.pr_template",
+   "share": 0.337,
+   "or": {
+    "est": 0.99,
+    "lo": 0.86,
+    "hi": 1.13
+   },
+   "q": 0.927,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A06.pinned_toolchain",
+   "share": 0.406,
+   "or": {
+    "est": 1.06,
+    "lo": 0.91,
+    "hi": 1.23
+   },
+   "q": 0.835,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A07.repro_env",
+   "share": 0.306,
+   "or": {
+    "est": 0.96,
+    "lo": 0.84,
+    "hi": 1.1
+   },
+   "q": 0.866,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A08.lint_format",
+   "share": 0.517,
+   "or": {
+    "est": 0.98,
+    "lo": 0.85,
+    "hi": 1.13
+   },
+   "q": 0.917,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A09.type_check",
+   "share": 0.197,
+   "or": {
+    "est": 1.08,
+    "lo": 0.92,
+    "hi": 1.27
+   },
+   "q": 0.713,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A10.tests_exist",
+   "share": 0.804,
+   "or": {
+    "est": 1.15,
+    "lo": 0.94,
+    "hi": 1.42
+   },
+   "q": 0.634,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A11.test_ratio",
+   "share": 0.788,
+   "or": {
+    "est": 1.05,
+    "lo": 0.99,
+    "hi": 1.11
+   },
+   "q": 0.519,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A12.readme_setup",
+   "share": 0.525,
+   "or": {
+    "est": 0.93,
+    "lo": 0.81,
+    "hi": 1.07
+   },
+   "q": 0.702,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A13.env_example",
+   "share": 0.152,
+   "or": {
+    "est": 0.99,
+    "lo": 0.84,
+    "hi": 1.16
+   },
+   "q": 0.927,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A14.codeowners",
+   "share": 0.199,
+   "or": {
+    "est": 0.9,
+    "lo": 0.77,
+    "hi": 1.05
+   },
+   "q": 0.634,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A15.issue_templates",
+   "share": 0.474,
+   "or": {
+    "est": 0.99,
+    "lo": 0.85,
+    "hi": 1.14
+   },
+   "q": 0.927,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A16.file_count",
+   "share": 0.998,
+   "or": {
+    "est": 1.1,
+    "lo": 1,
+    "hi": 1.21
+   },
+   "q": 0.498,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A17.package_count",
+   "share": 0.85,
+   "or": {
+    "est": 1.06,
+    "lo": 0.99,
+    "hi": 1.14
+   },
+   "q": 0.519,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "A18.language_count",
+   "share": 0.969,
+   "or": {
+    "est": 1.03,
+    "lo": 0.98,
+    "hi": 1.09
+   },
+   "q": 0.67,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.linter",
+   "share": 0.375,
+   "or": {
+    "est": 0.98,
+    "lo": 0.84,
+    "hi": 1.16
+   },
+   "q": 0.927,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.formatter",
+   "share": 0.494,
+   "or": {
+    "est": 1.04,
+    "lo": 0.9,
+    "hi": 1.21
+   },
+   "q": 0.866,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.type-checker",
+   "share": 0.359,
+   "or": {
+    "est": 1,
+    "lo": 0.85,
+    "hi": 1.18
+   },
+   "q": 0.99,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.pre-commit-hooks",
+   "share": 0.231,
+   "or": {
+    "est": 1.03,
+    "lo": 0.89,
+    "hi": 1.19
+   },
+   "q": 0.893,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.editorconfig",
+   "share": 0.2,
+   "or": {
+    "est": 0.98,
+    "lo": 0.82,
+    "hi": 1.17
+   },
+   "q": 0.927,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.test-framework",
+   "share": 0.461,
+   "or": {
+    "est": 0.96,
+    "lo": 0.82,
+    "hi": 1.11
+   },
+   "q": 0.866,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.test-files-exist",
+   "share": 0.676,
+   "or": {
+    "est": 1.14,
+    "lo": 0.94,
+    "hi": 1.38
+   },
+   "q": 0.634,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.test-script",
+   "share": 0.455,
+   "or": {
+    "est": 0.93,
+    "lo": 0.81,
+    "hi": 1.07
+   },
+   "q": 0.692,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.coverage-config",
+   "share": 0.281,
+   "or": {
+    "est": 1.21,
+    "lo": 1.06,
+    "hi": 1.38
+   },
+   "q": 0.0726,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.e2e-tests",
+   "share": 0.065,
+   "or": {
+    "est": 1.09,
+    "lo": 0.85,
+    "hi": 1.4
+   },
+   "q": 0.859,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.readme",
+   "share": 0.954,
+   "or": {
+    "est": 0.92,
+    "lo": 0.66,
+    "hi": 1.27
+   },
+   "q": 0.866,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.contributing",
+   "share": 0.45,
+   "or": {
+    "est": 1.03,
+    "lo": 0.9,
+    "hi": 1.17
+   },
+   "q": 0.893,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.api-docs",
+   "share": 0.031,
+   "or": {
+    "est": 0.83,
+    "lo": 0.58,
+    "hi": 1.17
+   },
+   "q": 0.692,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.codeowners",
+   "share": 0.199,
+   "or": {
+    "est": 0.9,
+    "lo": 0.77,
+    "hi": 1.05
+   },
+   "q": 0.634,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.ai-context",
+   "share": 0.268,
+   "or": {
+    "est": 1.38,
+    "lo": 1.21,
+    "hi": 1.59
+   },
+   "q": 0.00012,
+   "status": "retained",
+   "weight": 0.222,
+   "holdout": {
+    "est": 1.43,
+    "lo": 1.12,
+    "hi": 1.82,
+    "p": 0.0045,
+    "verdict": "replicated"
+   }
+  },
+  {
+   "id": "kodus.architecture-docs",
+   "share": 0.038,
+   "or": {
+    "est": 1.38,
+    "lo": 1.05,
+    "hi": 1.83
+   },
+   "q": 0.206,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.lock-file",
+   "share": 0.534,
+   "or": {
+    "est": 1.04,
+    "lo": 0.89,
+    "hi": 1.22
+   },
+   "q": 0.878,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.containerization",
+   "share": 0.415,
+   "or": {
+    "est": 1.09,
+    "lo": 0.95,
+    "hi": 1.25
+   },
+   "q": 0.67,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.env-documentation",
+   "share": 0.087,
+   "or": {
+    "est": 0.9,
+    "lo": 0.73,
+    "hi": 1.1
+   },
+   "q": 0.692,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.setup-script",
+   "share": 0.277,
+   "or": {
+    "est": 0.94,
+    "lo": 0.81,
+    "hi": 1.08
+   },
+   "q": 0.713,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.version-pinned",
+   "share": 0.304,
+   "or": {
+    "est": 0.88,
+    "lo": 0.76,
+    "hi": 1.03
+   },
+   "q": 0.519,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.ci-config",
+   "share": 0.862,
+   "or": {
+    "est": 0.93,
+    "lo": 0.77,
+    "hi": 1.13
+   },
+   "q": 0.835,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.ci-runs-tests",
+   "share": 0.465,
+   "or": {
+    "est": 1.08,
+    "lo": 0.93,
+    "hi": 1.25
+   },
+   "q": 0.692,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.ci-runs-linters",
+   "share": 0.303,
+   "or": {
+    "est": 1,
+    "lo": 0.86,
+    "hi": 1.15
+   },
+   "q": 0.99,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.build-automated",
+   "share": 0.525,
+   "or": {
+    "est": 1.02,
+    "lo": 0.87,
+    "hi": 1.2
+   },
+   "q": 0.907,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.deploy-pipeline",
+   "share": 0.712,
+   "or": {
+    "est": 1.15,
+    "lo": 0.98,
+    "hi": 1.35
+   },
+   "q": 0.519,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.branch-protection",
+   "share": 0.005,
+   "or": null,
+   "q": null,
+   "status": "not tested (prevalence)",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.dead-code-detection",
+   "share": 0.021,
+   "or": {
+    "est": 1.06,
+    "lo": 0.76,
+    "hi": 1.49
+   },
+   "q": 0.893,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.bundle-analysis",
+   "share": 0.012,
+   "or": null,
+   "q": null,
+   "status": "not tested (prevalence)",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.license",
+   "share": 0.867,
+   "or": {
+    "est": 1.32,
+    "lo": 1.06,
+    "hi": 1.66
+   },
+   "q": 0.193,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.security-scanning",
+   "share": 0.22,
+   "or": {
+    "est": 1.13,
+    "lo": 0.97,
+    "hi": 1.33
+   },
+   "q": 0.538,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.secrets-detection",
+   "share": 0.021,
+   "or": {
+    "est": 1.11,
+    "lo": 0.77,
+    "hi": 1.58
+   },
+   "q": 0.866,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.security-policy",
+   "share": 0.232,
+   "or": {
+    "est": 0.91,
+    "lo": 0.78,
+    "hi": 1.05
+   },
+   "q": 0.644,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "kodus.dep-update-automation",
+   "share": 0.315,
+   "or": {
+    "est": 1.08,
+    "lo": 0.94,
+    "hi": 1.24
+   },
+   "q": 0.692,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.agents_md",
+   "share": 0.273,
+   "or": {
+    "est": 1.15,
+    "lo": 1.08,
+    "hi": 1.22
+   },
+   "q": 0.000159,
+   "status": "retained",
+   "weight": 0.077,
+   "holdout": {
+    "est": 1.16,
+    "lo": 1.04,
+    "hi": 1.29,
+    "p": 0.00735,
+    "verdict": "replicated"
+   }
+  },
+  {
+   "id": "afc.cursor_rules",
+   "share": 0.044,
+   "or": {
+    "est": 0.98,
+    "lo": 0.94,
+    "hi": 1.03
+   },
+   "q": 0.864,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.gemini_md",
+   "share": 0.011,
+   "or": null,
+   "q": null,
+   "status": "not tested (prevalence)",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.openhands_setup",
+   "share": 0,
+   "or": null,
+   "q": null,
+   "status": "not tested (prevalence)",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.aider_conf",
+   "share": 0.001,
+   "or": null,
+   "q": null,
+   "status": "not tested (prevalence)",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.agent_skills",
+   "share": 0.014,
+   "or": null,
+   "q": null,
+   "status": "not tested (prevalence)",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.readme",
+   "share": 0.985,
+   "or": {
+    "est": 0.93,
+    "lo": 0.87,
+    "hi": 0.99
+   },
+   "q": 0.206,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.tests",
+   "share": 0.705,
+   "or": {
+    "est": 1.05,
+    "lo": 0.97,
+    "hi": 1.14
+   },
+   "q": 0.653,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.ci",
+   "share": 0.863,
+   "or": {
+    "est": 0.98,
+    "lo": 0.91,
+    "hi": 1.04
+   },
+   "q": 0.856,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.linter",
+   "share": 0.508,
+   "or": {
+    "est": 1,
+    "lo": 0.93,
+    "hi": 1.08
+   },
+   "q": 0.939,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.deps_manifest",
+   "share": 0.798,
+   "or": {
+    "est": 0.98,
+    "lo": 0.91,
+    "hi": 1.06
+   },
+   "q": 0.893,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.dev_env",
+   "share": 0.638,
+   "or": {
+    "est": 0.99,
+    "lo": 0.93,
+    "hi": 1.07
+   },
+   "q": 0.927,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.type_config",
+   "share": 0.52,
+   "or": {
+    "est": 0.97,
+    "lo": 0.9,
+    "hi": 1.05
+   },
+   "q": 0.835,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.license",
+   "share": 0.888,
+   "or": {
+    "est": 1.05,
+    "lo": 0.98,
+    "hi": 1.12
+   },
+   "q": 0.644,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.contributing",
+   "share": 0.518,
+   "or": {
+    "est": 0.99,
+    "lo": 0.92,
+    "hi": 1.06
+   },
+   "q": 0.893,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.pre_commit",
+   "share": 0.22,
+   "or": {
+    "est": 1.01,
+    "lo": 0.95,
+    "hi": 1.08
+   },
+   "q": 0.893,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  },
+  {
+   "id": "afc.size",
+   "share": 1,
+   "or": {
+    "est": 0.94,
+    "lo": 0.87,
+    "hi": 1.01
+   },
+   "q": 0.519,
+   "status": "dropped",
+   "weight": null,
+   "holdout": null
+  }
+ ],
+ "n1": {
+  "withTestCommand": 647,
+  "of": 999,
+  "pct": 64.8
+ },
+ "n2Points": 6.7
+}

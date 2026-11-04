@@ -22,6 +22,12 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - run: npm install -g npm@11.6.2
       - run: pnpm install --frozen-lockfile && pnpm run build && pnpm test && pnpm run typecheck
+      - name: GitHub release with the npm tarball
+        run: |
+          npm pack
+          gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1 || gh release create "$GITHUB_REF_NAME" landable-*.tgz --title "$GITHUB_REF_NAME" --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}
       - name: Publish unless this version is already on npm
         run: |
           version=$(node -p "require('./package.json').version")
@@ -30,7 +36,3 @@ jobs:
           else
             npm publish --access public
           fi
-      - name: GitHub release with the npm tarball
-        run: npm pack && gh release create "$GITHUB_REF_NAME" landable-*.tgz --title "$GITHUB_REF_NAME" --generate-notes
-        env:
-          GH_TOKEN: ${{ github.token }}

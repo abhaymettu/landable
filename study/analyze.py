@@ -142,6 +142,7 @@ def main():
     kinds = {i: ("count" if i in ("A11.test_ratio", "A16.file_count", "A17.package_count", "A18.language_count") else "graded" if i.startswith("afc.") else "binary") for i in item_ids}
 
     pr = ind.merge(ctl, on="repo_id", how="inner").merge(items, on="repo_id", how="inner").merge(market, on="repo_id", how="inner")
+    full = pr.copy()
     pr["k"] = [h("agentready-cap-v1", p) for p in pr["pr_id"]]
     pr = pr.sort_values(["repo_id", "k"]).groupby("repo_id").head(CAP).reset_index(drop=True)
     pr["merged"] = pr["merged"].astype(int)
@@ -185,11 +186,9 @@ def main():
     rows = []
     for i in item_ids:
         share = (repo_train[i] != 0).mean()
-        if kinds[i] in ("binary", "graded") and not 0.02 <= share <= 0.98:
+        modal = repo_train[i].value_counts(normalize=True).max()
+        if (kinds[i] == "binary" and not 0.02 <= share <= 0.98) or (kinds[i] != "binary" and modal > 0.98):
             rows.append({"item": i, "share": share, "status": "not tested (prevalence)"})
-            continue
-        if kinds[i] == "count" and repo_train[i].std() == 0:
-            rows.append({"item": i, "share": share, "status": "not tested (no variance)"})
             continue
         try:
             res, _ = fit(train, [coded[i]])
@@ -276,6 +275,58 @@ def main():
         rz, cz = fit(tr, ["z"])
         d, lo, hi = boot_auc_diff(ho, predict(rz, cz, ho, ["z"]), predict(rb, cb, ho, []), rng)
         p(f"| {m} | {fmt_or(odds(rh, 'z'))} | {d:.4f} [{lo:.4f}, {hi:.4f}] | {len(ho)} |")
+    p("")
+
+    p("## Exploratory outcomes (train unless noted; not confirmatory)")
+    p("")
+    for i, f in COUNT_TRANSFORM.items():
+        full[i] = full[i].map(f)
+    for i in item_ids:
+        full[coded[i]] = full[i].astype(float) if kinds[i] == "binary" else ((full[i] - repo_train[i].mean()) / repo_train[i].std() if repo_train[i].std() > 0 else 0.0)
+    ci = pd.DataFrame(jsonl(os.path.join(FROZEN, "ci.jsonl")))
+    s1 = pd.DataFrame()
+    if len(ci):
+        ci = ci[ci["state"].isin(["SUCCESS", "FAILURE", "ERROR"])].assign(ci_pass=lambda d: (d["state"] == "SUCCESS").astype(int))
+        s1 = full.merge(ci[["pr_id", "ci_pass"]], on="pr_id")
+    rv = con.execute(
+        """SELECT d.pr_id, min(epoch(rv.submitted_at::TIMESTAMP) - epoch(d.created_at::TIMESTAMP)) <= 72 * 3600 AS reviewed72
+           FROM independent d JOIN rv ON rv.pr_id = d.pr_id
+           WHERE rv.user_type = 'User' AND rv.user <> d.author AND rv.user <> coalesce(d.requester, '') AND rv.submitted_at IS NOT NULL
+           GROUP BY 1"""
+    ).fetchdf()
+    s2 = train.merge(rv, on="pr_id", how="left").assign(reviewed72=lambda d: d["reviewed72"].fillna(False).astype(int))
+    alld = con.execute(
+        """SELECT pr_id, repo_id, agent, (merged_at IS NOT NULL)::INT AS merged,
+                  (decider = author OR decider = coalesce(requester, '')) ::INT AS self_decided
+           FROM decisions WHERE state = 'closed' AND decider IS NOT NULL AND created_at <= '2026-03-31T23:59:59Z'"""
+    ).fetchdf()
+    r1 = alld.merge(full.drop(columns=["pr_id", "agent", "merged"]).drop_duplicates("repo_id"), on="repo_id")
+    r1 = r1[r1["split"] == "train"].assign(k=lambda d: [h("agentready-cap-v1", x) for x in d["pr_id"]])
+    r1 = r1.sort_values(["repo_id", "k"]).groupby("repo_id").head(CAP)
+    if PERMUTED or SYNTHETIC:
+        for frame, col in ((s1, "ci_pass"), (s2, "reviewed72"), (r1, "merged")):
+            if len(frame):
+                frame[col] = rng.permutation(frame[col].to_numpy())
+    p(f"S1: head-commit CI result for {len(s1)} of the 5,000 sampled PRs (the rest have no status rollup), both splits; "
+      f"pass rate {s1['ci_pass'].mean() if len(s1) else float('nan'):.3f}. S2: a person other than author and requester reviewed within 72 hours, "
+      f"{len(s2)} train PRs, rate {s2['reviewed72'].mean():.3f}. R1: every closed agent PR with a known decider, self-decisions included "
+      f"with an indicator, {len(r1)} train PRs.")
+    p("")
+    p("| Item | S1 CI pass, odds ratio | S2 review in 72 h, odds ratio | R1 every decision, odds ratio |")
+    p("|---|---|---|---|")
+    def safe(frame, extra, y):
+        try:
+            res, _ = fit(frame, extra, y=y)
+            return fmt_or(odds(res, extra[0]))
+        except Exception as err:  # noqa: BLE001 - a failed fit is reported, not hidden
+            return f"failed ({type(err).__name__})"
+    r1 = r1.assign(log_nonagent_decided=r1["log_nonagent_decided"] + 0.0)
+    for r in tested:
+        i = r["item"]
+        a = safe(s1, [coded[i]], "ci_pass") if len(s1) > 50 else "too few"
+        b = safe(s2, [coded[i]], "reviewed72")
+        c = safe(r1.assign(z_self=r1["self_decided"]), [coded[i], "z_self"], "merged")
+        p(f"| {i} | {a} | {b} | {c} |")
     p("")
 
     top = jsonl(os.path.join(ROOT, "data", "top-scan.jsonl"))

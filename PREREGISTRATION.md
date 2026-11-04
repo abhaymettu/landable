@@ -187,3 +187,10 @@ for any repository in the sample, and no item was set against any outcome.
   repository's `.gitignore` (the items read tracked files only, which `.gitignore` rarely matches); Kodus's language
   detector is reproduced from its file markers, with Kotlin detected by the substring `kotlin` in `build.gradle(.kts)`
   or `pom.xml`.
+- 2026-11-04 00:07, before any outcome join. The prevalence rule in step 1 reads "nonzero value", which would drop
+  every count item (a repository always has files) and AFC's `size` (graded 0.2 to 1, never 0). The rule as applied:
+  a binary item is tested when 2% to 98% of train repositories have it; a graded or count item is tested when its most
+  common value covers at most 98% of train repositories. Found on permuted outcomes, from item distributions only.
+- 2026-11-04 00:05. Repositories whose git file listing exceeds 200 MB are scan failures (exclusions), after one such
+  repository in the leaderboard set overflowed Node's string limit.
+- 2026-11-04 00:08. Exploratory S1, S2 and R1 report every tested item, not only retained ones.

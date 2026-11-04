@@ -1,0 +1,81 @@
+agentready sindresorhus/ky @ 3541888878c4
+
+agentready items
+  yes  A01.test_command               package.json
+  yes  A02.ci_on_pr                   .github/workflows/main.yml
+  yes  A03.agent_instructions         AGENTS.md
+  no   A04.contributing               -
+  no   A05.pr_template                -
+  no   A06.pinned_toolchain           -
+  no   A07.repro_env                  -
+  no   A08.lint_format                -
+  no   A09.type_check                 -
+  yes  A10.tests_exist                test/base-url.ts
+  0.8846  A11.test_ratio                 46 test files, 52 source files
+  yes  A12.readme_setup               readme.md
+  no   A13.env_example                -
+  no   A14.codeowners                 -
+  no   A15.issue_templates            -
+  115  A16.file_count                 115 files
+  1    A17.package_count              package.json
+  1    A18.language_count             TypeScript
+
+Kodus agent-readiness checks (as shipped)
+  no   kodus.linter                   -
+  no   kodus.formatter                -
+  no   kodus.type-checker             -
+  no   kodus.pre-commit-hooks         -
+  yes  kodus.editorconfig             .editorconfig
+  no   kodus.test-framework           -
+  yes  kodus.test-files-exist         tsconfig.test.json
+  yes  kodus.test-script              package.json
+  no   kodus.coverage-config          -
+  no   kodus.e2e-tests                -
+  yes  kodus.readme                   readme.md
+  no   kodus.contributing             -
+  no   kodus.api-docs                 -
+  no   kodus.codeowners               -
+  no   kodus.ai-context               -
+  no   kodus.architecture-docs        -
+  no   kodus.lock-file                -
+  no   kodus.containerization         -
+  no   kodus.env-documentation        -
+  no   kodus.setup-script             -
+  no   kodus.version-pinned           -
+  yes  kodus.ci-config                .github/workflows/main.yml
+  yes  kodus.ci-runs-tests            .github/workflows/main.yml
+  no   kodus.ci-runs-linters          -
+  yes  kodus.build-automated          package.json
+  no   kodus.deploy-pipeline          -
+  no   kodus.branch-protection        -
+  no   kodus.dead-code-detection      -
+  no   kodus.bundle-analysis          -
+  no   kodus.license                  -
+  no   kodus.security-scanning        -
+  no   kodus.secrets-detection        -
+  no   kodus.security-policy          -
+  no   kodus.dep-update-automation    -
+
+Agent Friendly Code signals (as shipped)
+  0.8  afc.agents_md                  AGENTS.md
+  0    afc.cursor_rules               -
+  0    afc.gemini_md                  -
+  0    afc.openhands_setup            -
+  0    afc.aider_conf                 -
+  0    afc.agent_skills               -
+  1    afc.readme                     readme.md
+  1    afc.tests                      test
+  1    afc.ci                         .github/workflows/main.yml
+  0    afc.linter                     -
+  1    afc.deps_manifest              package.json
+  0.6  afc.dev_env                    package.json
+  1    afc.type_config                tsconfig.json
+  1    afc.license                    license
+  0    afc.contributing               -
+  0    afc.pre_commit                 -
+  1    afc.size                       108 files
+
+Kodus: 21% of deterministic checks, level 0
+Agent Friendly Code: overall 66.8
+
+Validation: preregistered (PREREGISTRATION.md); item weights are published only after the held-out test.

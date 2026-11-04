@@ -1,0 +1,81 @@
+agentready dotnet/aspnetcore @ e644b0c25f88
+
+agentready items
+  yes  A01.test_command               package.json
+  yes  A02.ci_on_pr                   .github/workflows/community-pr-issue-check.lock.yml
+  yes  A03.agent_instructions         .github/copilot-instructions.md
+  yes  A04.contributing               CONTRIBUTING.md
+  yes  A05.pr_template                .github/PULL_REQUEST_TEMPLATE/servicing.md
+  yes  A06.pinned_toolchain           package-lock.json, global.json
+  yes  A07.repro_env                  .devcontainer/Dockerfile
+  yes  A08.lint_format                .markdownlint.json
+  no   A09.type_check                 -
+  yes  A10.tests_exist                .github/skills/pr-attention-queue/tests/MergeEligibilityTestHelpers.ps1
+  0.5557  A11.test_ratio                 4173 test files, 7509 source files
+  no   A12.readme_setup               -
+  no   A13.env_example                -
+  yes  A14.codeowners                 .github/CODEOWNERS
+  yes  A15.issue_templates            .github/ISSUE_TEMPLATE/10_bug_report.yml
+  17767  A16.file_count                 17767 files
+  655  A17.package_count              .github/skills/review-pull-request/scripts/PrepareReview.Tests.csproj, eng/common/internal/Tools.csproj, eng/skill-evals/evaluation-tools/package.json, eng/tools/DependabotDiscovery/DependabotDiscovery.csproj, eng/tools/GenerateFiles/GenerateFiles.csproj
+  5    A18.language_count             C#, TypeScript, JavaScript, C, PowerShell
+
+Kodus agent-readiness checks (as shipped)
+  no   kodus.linter                   -
+  no   kodus.formatter                -
+  no   kodus.type-checker             -
+  no   kodus.pre-commit-hooks         -
+  yes  kodus.editorconfig             .editorconfig
+  yes  kodus.test-framework           .github/skills/review-pull-request/scripts/PrepareReview.Tests.csproj
+  yes  kodus.test-files-exist         src/Analyzers/Analyzers/test/CompilationFeatureDetectorTest.cs
+  yes  kodus.test-script              package.json
+  yes  kodus.coverage-config          .github/workflows/browsertesting-deps-update.lock.yml
+  no   kodus.e2e-tests                -
+  yes  kodus.readme                   README.md
+  yes  kodus.contributing             CONTRIBUTING.md
+  no   kodus.api-docs                 -
+  yes  kodus.codeowners               .github/CODEOWNERS
+  yes  kodus.ai-context               .github/copilot-instructions.md
+  no   kodus.architecture-docs        -
+  yes  kodus.lock-file                package-lock.json
+  yes  kodus.containerization         .devcontainer
+  no   kodus.env-documentation        -
+  no   kodus.setup-script             -
+  yes  kodus.version-pinned           global.json
+  yes  kodus.ci-config                .github/workflows/agentics-maintenance-dotnet-AspNetCore.Docs.yml
+  no   kodus.ci-runs-tests            -
+  no   kodus.ci-runs-linters          -
+  yes  kodus.build-automated          package.json
+  yes  kodus.deploy-pipeline          .github/workflows/backport.yml
+  no   kodus.branch-protection        -
+  no   kodus.dead-code-detection      -
+  no   kodus.bundle-analysis          -
+  yes  kodus.license                  LICENSE.txt
+  no   kodus.security-scanning        -
+  no   kodus.secrets-detection        -
+  yes  kodus.security-policy          SECURITY.md
+  yes  kodus.dep-update-automation    .github/dependabot.yml
+
+Agent Friendly Code signals (as shipped)
+  0    afc.agents_md                  -
+  0    afc.cursor_rules               -
+  0    afc.gemini_md                  -
+  0    afc.openhands_setup            -
+  0    afc.aider_conf                 -
+  0    afc.agent_skills               -
+  1    afc.readme                     README.md
+  0.7  afc.tests                      .github/workflows/pr-docs-check/test_authentication.py
+  1    afc.ci                         .github/workflows/agentics-maintenance-dotnet-AspNetCore.Docs.yml
+  0    afc.linter                     -
+  1    afc.deps_manifest              package.json
+  0.7  afc.dev_env                    .devcontainer/devcontainer.json
+  1    afc.type_config                global.json
+  1    afc.license                    LICENSE.txt
+  1    afc.contributing               CONTRIBUTING.md
+  0    afc.pre_commit                 -
+  0.2  afc.size                       >10000 files
+
+Kodus: 53% of deterministic checks, level 1
+Agent Friendly Code: overall 57
+
+Validation: preregistered (PREREGISTRATION.md); item weights are published only after the held-out test.

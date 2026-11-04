@@ -1,0 +1,81 @@
+agentready laravel/framework @ 53388cc75462
+
+agentready items
+  yes  A01.test_command               .github/workflows/databases-nightly.yml
+  yes  A02.ci_on_pr                   .github/workflows/databases.yml
+  no   A03.agent_instructions         -
+  yes  A04.contributing               .github/CONTRIBUTING.md
+  yes  A05.pr_template                .github/PULL_REQUEST_TEMPLATE.md
+  no   A06.pinned_toolchain           -
+  yes  A07.repro_env                  docker-compose.yml
+  no   A08.lint_format                -
+  no   A09.type_check                 -
+  yes  A10.tests_exist                src/Illuminate/Console/Concerns/CreatesMatchingTest.php
+  0.7374  A11.test_ratio                 1348 test files, 1828 source files
+  no   A12.readme_setup               -
+  no   A13.env_example                -
+  no   A14.codeowners                 -
+  yes  A15.issue_templates            .github/ISSUE_TEMPLATE/Bug_report.yml
+  3497  A16.file_count                 3497 files
+  41   A17.package_count              composer.json, src/Illuminate/Auth/composer.json, src/Illuminate/Broadcasting/composer.json, src/Illuminate/Bus/composer.json, src/Illuminate/Cache/composer.json
+  1    A18.language_count             PHP
+
+Kodus agent-readiness checks (as shipped)
+  yes  kodus.linter                   composer.json
+  no   kodus.formatter                -
+  no   kodus.type-checker             -
+  no   kodus.pre-commit-hooks         -
+  yes  kodus.editorconfig             .editorconfig
+  yes  kodus.test-framework           phpunit.xml.dist
+  yes  kodus.test-files-exist         src/Illuminate/Console/Concerns/CreatesMatchingTest.php
+  no   kodus.test-script              -
+  yes  kodus.coverage-config          .github/workflows/install-nightly.yml
+  no   kodus.e2e-tests                -
+  yes  kodus.readme                   README.md
+  no   kodus.contributing             -
+  no   kodus.api-docs                 -
+  no   kodus.codeowners               -
+  no   kodus.ai-context               -
+  no   kodus.architecture-docs        -
+  no   kodus.lock-file                -
+  yes  kodus.containerization         docker-compose.yml
+  no   kodus.env-documentation        -
+  no   kodus.setup-script             -
+  no   kodus.version-pinned           -
+  yes  kodus.ci-config                .github/workflows/databases-nightly.yml
+  yes  kodus.ci-runs-tests            .github/workflows/databases-nightly.yml
+  yes  kodus.ci-runs-linters          .github/workflows/static-analysis.yml
+  yes  kodus.build-automated          .github/workflows/update-assets.yml
+  yes  kodus.deploy-pipeline          .github/workflows/install-nightly.yml
+  no   kodus.branch-protection        -
+  no   kodus.dead-code-detection      -
+  no   kodus.bundle-analysis          -
+  yes  kodus.license                  LICENSE.md
+  yes  kodus.security-scanning        .github/workflows/dependabot-auto-merge.yml
+  no   kodus.secrets-detection        -
+  yes  kodus.security-policy          .github/SECURITY.md
+  yes  kodus.dep-update-automation    .github/dependabot.yml
+
+Agent Friendly Code signals (as shipped)
+  0    afc.agents_md                  -
+  0    afc.cursor_rules               -
+  0    afc.gemini_md                  -
+  0    afc.openhands_setup            -
+  0    afc.aider_conf                 -
+  0    afc.agent_skills               -
+  1    afc.readme                     README.md
+  1    afc.tests                      tests
+  1    afc.ci                         .github/workflows/databases-nightly.yml
+  0    afc.linter                     -
+  1    afc.deps_manifest              composer.json
+  0.7  afc.dev_env                    docker-compose.yml
+  0    afc.type_config                -
+  1    afc.license                    LICENSE.md
+  1    afc.contributing               .github/CONTRIBUTING.md
+  0    afc.pre_commit                 -
+  0.5  afc.size                       3378 files
+
+Kodus: 47% of deterministic checks, level 0
+Agent Friendly Code: overall 54.1
+
+Validation: preregistered (PREREGISTRATION.md); item weights are published only after the held-out test.

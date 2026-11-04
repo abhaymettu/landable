@@ -1,0 +1,81 @@
+agentready rails/rails @ 6782df4a5e14
+
+agentready items
+  yes  A01.test_command               .github/workflows/rail_inspector.yml
+  yes  A02.ci_on_pr                   .github/workflows/devcontainer-shellcheck.yml
+  yes  A03.agent_instructions         AGENTS.md
+  yes  A04.contributing               CONTRIBUTING.md
+  yes  A05.pr_template                .github/pull_request_template.md
+  no   A06.pinned_toolchain           -
+  yes  A07.repro_env                  .devcontainer/Dockerfile
+  yes  A08.lint_format                .rubocop.yml
+  no   A09.type_check                 -
+  yes  A10.tests_exist                actioncable/rollup.config.test.js
+  1.1829  A11.test_ratio                 1921 test files, 1624 source files
+  yes  A12.readme_setup               README.md
+  no   A13.env_example                -
+  yes  A14.codeowners                 .github/CODEOWNERS
+  yes  A15.issue_templates            .github/ISSUE_TEMPLATE/bug_report.md
+  5030  A16.file_count                 5030 files
+  8    A17.package_count              Gemfile, actioncable/package.json, actiontext/package.json, activestorage/package.json, package.json
+  2    A18.language_count             Ruby, JavaScript
+
+Kodus agent-readiness checks (as shipped)
+  yes  kodus.linter                   .rubocop.yml
+  yes  kodus.formatter                .rubocop.yml
+  no   kodus.type-checker             -
+  no   kodus.pre-commit-hooks         -
+  no   kodus.editorconfig             -
+  yes  kodus.test-framework           Gemfile
+  yes  kodus.test-files-exist         actioncable/rollup.config.test.js
+  yes  kodus.test-script              Rakefile
+  no   kodus.coverage-config          -
+  no   kodus.e2e-tests                -
+  yes  kodus.readme                   README.md
+  yes  kodus.contributing             CONTRIBUTING.md
+  no   kodus.api-docs                 -
+  yes  kodus.codeowners               .github/CODEOWNERS
+  no   kodus.ai-context               -
+  no   kodus.architecture-docs        -
+  yes  kodus.lock-file                yarn.lock
+  yes  kodus.containerization         .devcontainer
+  no   kodus.env-documentation        -
+  yes  kodus.setup-script             Rakefile
+  no   kodus.version-pinned           -
+  yes  kodus.ci-config                .github/workflows/devcontainer-shellcheck.yml
+  yes  kodus.ci-runs-tests            .github/workflows/rail_inspector.yml
+  no   kodus.ci-runs-linters          -
+  no   kodus.build-automated          -
+  yes  kodus.deploy-pipeline          .github/workflows/rails-new-docker.yml
+  no   kodus.branch-protection        -
+  no   kodus.dead-code-detection      -
+  no   kodus.bundle-analysis          -
+  no   kodus.license                  -
+  yes  kodus.security-scanning        Gemfile
+  no   kodus.secrets-detection        -
+  no   kodus.security-policy          -
+  no   kodus.dep-update-automation    -
+
+Agent Friendly Code signals (as shipped)
+  1    afc.agents_md                  AGENTS.md
+  0    afc.cursor_rules               -
+  0    afc.gemini_md                  -
+  0    afc.openhands_setup            -
+  0    afc.aider_conf                 -
+  0    afc.agent_skills               -
+  1    afc.readme                     README.md
+  0.7  afc.tests                      actioncable/rollup.config.test.js
+  1    afc.ci                         .github/workflows/devcontainer-shellcheck.yml
+  1    afc.linter                     eslint.config.mjs
+  1    afc.deps_manifest              package.json
+  0.7  afc.dev_env                    .devcontainer/devcontainer.json
+  0    afc.type_config                -
+  0    afc.license                    -
+  1    afc.contributing               CONTRIBUTING.md
+  0    afc.pre_commit                 -
+  0.5  afc.size                       4900 files
+
+Kodus: 44% of deterministic checks, level 0
+Agent Friendly Code: overall 65.2
+
+Validation: preregistered (PREREGISTRATION.md); item weights are published only after the held-out test.

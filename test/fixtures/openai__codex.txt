@@ -1,0 +1,81 @@
+agentready openai/codex @ 3a2788e6fc89
+
+agentready items
+  yes  A01.test_command               justfile
+  yes  A02.ci_on_pr                   .github/workflows/blocking-ci.yml
+  no   A03.agent_instructions         -
+  yes  A04.contributing               docs/contributing.md
+  no   A05.pr_template                -
+  yes  A06.pinned_toolchain           pnpm-lock.yaml, .nvmrc
+  yes  A07.repro_env                  flake.nix
+  yes  A08.lint_format                .prettierrc.toml
+  no   A09.type_check                 -
+  yes  A10.tests_exist                .github/scripts/macos-signing/test_notarize_with_akv.py
+  0.1717  A11.test_ratio                 999 test files, 5818 source files
+  yes  A12.readme_setup               README.md
+  no   A13.env_example                -
+  yes  A14.codeowners                 .github/CODEOWNERS
+  yes  A15.issue_templates            .github/ISSUE_TEMPLATE/1-codex-app.yml
+  9960  A16.file_count                 9960 files
+  182  A17.package_count              .github/actions/setup-python-release-tools/pyproject.toml, codex-cli/package.json, codex-rs/Cargo.toml, codex-rs/agent-graph-store/Cargo.toml, codex-rs/agent-identity/Cargo.toml
+  3    A18.language_count             Rust, TypeScript, Python
+
+Kodus agent-readiness checks (as shipped)
+  yes  kodus.linter                   ruff.toml
+  yes  kodus.formatter                .prettierrc.toml
+  no   kodus.type-checker             -
+  no   kodus.pre-commit-hooks         -
+  no   kodus.editorconfig             -
+  no   kodus.test-framework           -
+  yes  kodus.test-files-exist         codex-cli/tests/exit-status.test.mjs
+  no   kodus.test-script              -
+  yes  kodus.coverage-config          .github/workflows/bazel.yml
+  no   kodus.e2e-tests                -
+  yes  kodus.readme                   README.md
+  yes  kodus.contributing             docs/contributing.md
+  no   kodus.api-docs                 -
+  yes  kodus.codeowners               .github/CODEOWNERS
+  no   kodus.ai-context               -
+  no   kodus.architecture-docs        -
+  yes  kodus.lock-file                pnpm-lock.yaml
+  no   kodus.containerization         -
+  no   kodus.env-documentation        -
+  no   kodus.setup-script             -
+  yes  kodus.version-pinned           .nvmrc
+  yes  kodus.ci-config                .github/workflows/bazel.yml
+  yes  kodus.ci-runs-tests            .github/workflows/rust-release-provisioned-macos.yml
+  yes  kodus.ci-runs-linters          .github/workflows/rust-ci-full.yml
+  yes  kodus.build-automated          .github/workflows/rust-ci-full-nextest-platform.yml
+  yes  kodus.deploy-pipeline          .github/workflows/bazel.yml
+  no   kodus.branch-protection        -
+  no   kodus.dead-code-detection      -
+  no   kodus.bundle-analysis          -
+  yes  kodus.license                  LICENSE
+  yes  kodus.security-scanning        .github/workflows/cla.yml
+  no   kodus.secrets-detection        -
+  yes  kodus.security-policy          SECURITY.md
+  yes  kodus.dep-update-automation    .github/dependabot.yaml
+
+Agent Friendly Code signals (as shipped)
+  0    afc.agents_md                  -
+  0    afc.cursor_rules               -
+  0    afc.gemini_md                  -
+  0    afc.openhands_setup            -
+  0    afc.aider_conf                 -
+  0    afc.agent_skills               -
+  1    afc.readme                     README.md
+  0.7  afc.tests                      .github/scripts/macos-signing/test_notarize_with_akv.py
+  1    afc.ci                         .github/workflows/bazel.yml
+  1    afc.linter                     ruff.toml
+  1    afc.deps_manifest              package.json
+  1    afc.dev_env                    flake.nix, justfile
+  0    afc.type_config                -
+  1    afc.license                    LICENSE
+  1    afc.contributing               docs/contributing.md
+  0    afc.pre_commit                 -
+  0.2  afc.size                       9750 files
+
+Kodus: 53% of deterministic checks, level 0
+Agent Friendly Code: overall 60.2
+
+Validation: preregistered (PREREGISTRATION.md); item weights are published only after the held-out test.

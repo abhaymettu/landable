@@ -1,0 +1,81 @@
+agentready tokio-rs/tokio @ f67444986f67
+
+agentready items
+  yes  A01.test_command               Cargo.toml
+  yes  A02.ci_on_pr                   .github/workflows/ci.yml
+  no   A03.agent_instructions         -
+  yes  A04.contributing               CONTRIBUTING.md
+  yes  A05.pr_template                .github/PULL_REQUEST_TEMPLATE.md
+  no   A06.pinned_toolchain           -
+  no   A07.repro_env                  -
+  no   A08.lint_format                -
+  no   A09.type_check                 -
+  yes  A10.tests_exist                tests-build/tests/fail/macros_core_no_default.rs
+  0.5992  A11.test_ratio                 305 test files, 509 source files
+  no   A12.readme_setup               -
+  no   A13.env_example                -
+  no   A14.codeowners                 -
+  yes  A15.issue_templates            .github/ISSUE_TEMPLATE/bug_report.md
+  890  A16.file_count                 890 files
+  13   A17.package_count              Cargo.toml, benches/Cargo.toml, examples/Cargo.toml, stress-test/Cargo.toml, tests-build/Cargo.toml
+  1    A18.language_count             Rust
+
+Kodus agent-readiness checks (as shipped)
+  yes  kodus.linter                   Cargo.toml
+  yes  kodus.formatter                Cargo.toml
+  yes  kodus.type-checker             detected typed language
+  no   kodus.pre-commit-hooks         -
+  no   kodus.editorconfig             -
+  yes  kodus.test-framework           Cargo.toml
+  no   kodus.test-files-exist         -
+  yes  kodus.test-script              Cargo.toml
+  no   kodus.coverage-config          -
+  no   kodus.e2e-tests                -
+  yes  kodus.readme                   README.md
+  yes  kodus.contributing             CONTRIBUTING.md
+  no   kodus.api-docs                 -
+  no   kodus.codeowners               -
+  no   kodus.ai-context               -
+  no   kodus.architecture-docs        -
+  no   kodus.lock-file                -
+  no   kodus.containerization         -
+  no   kodus.env-documentation        -
+  no   kodus.setup-script             -
+  no   kodus.version-pinned           -
+  yes  kodus.ci-config                .github/workflows/audit.yml
+  yes  kodus.ci-runs-tests            .github/workflows/ci.yml
+  yes  kodus.ci-runs-linters          .github/workflows/ci.yml
+  yes  kodus.build-automated          .github/workflows/ci.yml
+  yes  kodus.deploy-pipeline          .github/workflows/ci.yml
+  no   kodus.branch-protection        -
+  no   kodus.dead-code-detection      -
+  no   kodus.bundle-analysis          -
+  yes  kodus.license                  LICENSE
+  no   kodus.security-scanning        -
+  no   kodus.secrets-detection        -
+  yes  kodus.security-policy          SECURITY.md
+  yes  kodus.dep-update-automation    .github/dependabot.yml
+
+Agent Friendly Code signals (as shipped)
+  0    afc.agents_md                  -
+  0    afc.cursor_rules               -
+  0    afc.gemini_md                  -
+  0    afc.openhands_setup            -
+  0    afc.aider_conf                 -
+  0    afc.agent_skills               -
+  1    afc.readme                     README.md
+  0.7  afc.tests                      tokio/tests/fs_uring_statx_fd_leak_test.rs
+  1    afc.ci                         .github/workflows/audit.yml
+  0    afc.linter                     -
+  1    afc.deps_manifest              Cargo.toml
+  0    afc.dev_env                    -
+  1    afc.type_config                Cargo.toml
+  1    afc.license                    LICENSE
+  1    afc.contributing               CONTRIBUTING.md
+  0    afc.pre_commit                 -
+  0.8  afc.size                       871 files
+
+Kodus: 44% of deterministic checks, level 0
+Agent Friendly Code: overall 54.4
+
+Validation: preregistered (PREREGISTRATION.md); item weights are published only after the held-out test.

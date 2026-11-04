@@ -182,4 +182,8 @@ for any repository in the sample, and no item was set against any outcome.
 
 ## Deviations
 
-None yet.
+- 2026-11-04 00:01, before any outcome join. Two places where the market items cannot be read exactly as their
+  source reads a working copy: AFC's `size` walk skips the fixed directory list and dot paths but does not apply the
+  repository's `.gitignore` (the items read tracked files only, which `.gitignore` rarely matches); Kodus's language
+  detector is reproduced from its file markers, with Kotlin detected by the substring `kotlin` in `build.gradle(.kts)`
+  or `pom.xml`.

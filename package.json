@@ -1,0 +1,27 @@
+{
+  "name": "agentready",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent-readiness score for a repository, with every item validated against real agent pull request outcomes",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "agentready": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "5.9.3",
+    "vitest": "3.2.4"
+  }
+}

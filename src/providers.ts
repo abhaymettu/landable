@@ -9,11 +9,11 @@ import { MAX_TEXT_BYTES, wantedTexts } from "./wanted.js";
 const exec = promisify(execFile);
 const git = async (cwd: string, args: readonly string[], input?: string): Promise<string> => {
   if (input === undefined) {
-    const { stdout } = await exec("git", [...args], { cwd, maxBuffer: 512 << 20, encoding: "utf8" });
+    const { stdout } = await exec("git", [...args], { cwd, maxBuffer: 200 << 20, encoding: "utf8" });
     return stdout;
   }
   return new Promise((resolve, reject) => {
-    const child = execFile("git", [...args], { cwd, maxBuffer: 512 << 20, encoding: "buffer" }, (err, stdout) =>
+    const child = execFile("git", [...args], { cwd, maxBuffer: 200 << 20, encoding: "buffer" }, (err, stdout) =>
       err ? reject(err) : resolve(stdout.toString("latin1")),
     );
     child.stdin?.end(input);

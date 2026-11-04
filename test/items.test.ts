@@ -38,7 +38,7 @@ describe("A02 ci_on_pr", () => {
 
 describe("agent instruction files", () => {
   const agentsOnly = { "AGENTS.md": "x".repeat(300) };
-  it("agentready counts AGENTS.md", () => {
+  it("landable counts AGENTS.md", () => {
     expect(value(agentsOnly, "A03.agent_instructions")).toBe(1);
   });
   it("Kodus ignores AGENTS.md, as shipped", () => {
@@ -51,7 +51,7 @@ describe("agent instruction files", () => {
 
 describe("type checking", () => {
   const tsconfig = { "tsconfig.json": '{\n  "$schema": "https://json.schemastore.org/tsconfig",\n  "compilerOptions": { "strict": true }\n}\n' };
-  it("agentready parses a tsconfig with a URL", () => {
+  it("landable parses a tsconfig with a URL", () => {
     expect(value(tsconfig, "A09.type_check")).toBe(1);
   });
   it("Kodus's comment stripper breaks on the same file, as shipped", () => {

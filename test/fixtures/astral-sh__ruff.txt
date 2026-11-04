@@ -1,6 +1,6 @@
-agentready astral-sh/ruff @ b9a10a087dd5
+landable astral-sh/ruff @ b9a10a087dd5
 
-agentready items
+landable items
   yes  A01.test_command               Cargo.toml
   yes  A02.ci_on_pr                   .github/workflows/ai-policy.yml
   yes  A03.agent_instructions         AGENTS.md

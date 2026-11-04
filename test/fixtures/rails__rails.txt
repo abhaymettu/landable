@@ -1,6 +1,6 @@
-agentready rails/rails @ 6782df4a5e14
+landable rails/rails @ 6782df4a5e14
 
-agentready items
+landable items
   yes  A01.test_command               .github/workflows/rail_inspector.yml
   yes  A02.ci_on_pr                   .github/workflows/devcontainer-shellcheck.yml
   yes  A03.agent_instructions         AGENTS.md

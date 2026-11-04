@@ -1,6 +1,6 @@
-agentready spring-projects/spring-boot @ b9010e5b8e38
+landable spring-projects/spring-boot @ b9010e5b8e38
 
-agentready items
+landable items
   yes  A01.test_command               build.gradle
   yes  A02.ci_on_pr                   .github/workflows/build-pull-request.yml
   no   A03.agent_instructions         -

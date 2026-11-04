@@ -1,6 +1,6 @@
-agentready dotnet/aspnetcore @ e644b0c25f88
+landable dotnet/aspnetcore @ e644b0c25f88
 
-agentready items
+landable items
   yes  A01.test_command               package.json
   yes  A02.ci_on_pr                   .github/workflows/community-pr-issue-check.lock.yml
   yes  A03.agent_instructions         .github/copilot-instructions.md

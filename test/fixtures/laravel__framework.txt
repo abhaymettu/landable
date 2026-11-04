@@ -1,6 +1,6 @@
-agentready laravel/framework @ 53388cc75462
+landable laravel/framework @ 53388cc75462
 
-agentready items
+landable items
   yes  A01.test_command               .github/workflows/databases-nightly.yml
   yes  A02.ci_on_pr                   .github/workflows/databases.yml
   no   A03.agent_instructions         -

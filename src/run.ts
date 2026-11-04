@@ -4,10 +4,10 @@ import type { Finding, Item } from "./item.js";
 import type { Snapped, Source } from "./providers.js";
 import { ITEMS, type Evaluation } from "./score.js";
 
-const USAGE = `usage: agentready <owner/repo | github URL | path> [--ref <branch|sha>] [--json]
+const USAGE = `usage: landable <owner/repo | github URL | path> [--ref <branch|sha>] [--json]
 
 Reads the repository at one commit and reports every agent-readiness item with the file that is its evidence.
-Items: agentready's own 18, Kodus's 34 deterministic checks and Agent Friendly Code's 17 signals, as shipped.
+Items: landable's own 18, Kodus's 34 deterministic checks and Agent Friendly Code's 17 signals, as shipped.
 `;
 
 export type Args = { readonly source: Source; readonly json: boolean };
@@ -39,9 +39,9 @@ const show = (item: Item, f: Finding): string => {
 };
 
 export function renderText(snapped: Snapped, ev: Evaluation): string {
-  const lines = [`agentready ${snapped.label}${snapped.commit ? ` @ ${snapped.commit.slice(0, 12)}` : ""}`, ""];
+  const lines = [`landable ${snapped.label}${snapped.commit ? ` @ ${snapped.commit.slice(0, 12)}` : ""}`, ""];
   const families = [
-    ["own", "agentready items"],
+    ["own", "landable items"],
     ["kodus", "Kodus agent-readiness checks (as shipped)"],
     ["afc", "Agent Friendly Code signals (as shipped)"],
   ] as const;

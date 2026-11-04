@@ -1,4 +1,4 @@
-// agentready's own items, family A of PREREGISTRATION.md.
+// landable's own items (agentready during the study), family A of PREREGISTRATION.md.
 import { fail, firstHit, graded, pass, type Item } from "../item.js";
 import {
   field,

@@ -1,12 +1,16 @@
 {
-  "name": "agentready",
+  "name": "landable",
   "version": "0.1.0",
-  "private": true,
-  "description": "Agent-readiness score for a repository, with every item validated against real agent pull request outcomes",
+  "description": "Checks a repository against the agent-readiness items the market sells, and says which ones actually predicted an agent PR merging on 38,070 real PRs",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhaymettu/landable.git"
+  },
+  "homepage": "https://github.com/abhaymettu/landable",
   "bin": {
-    "agentready": "dist/cli.js"
+    "landable": "dist/cli.js"
   },
   "files": [
     "dist"

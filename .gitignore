@@ -5,3 +5,6 @@ data/raw/
 data/cache/
 *.part
 .DS_Store
+analysis/run.err
+__pycache__/
+.wrangler/

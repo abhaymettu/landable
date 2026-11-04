@@ -1,6 +1,6 @@
-agentready sindresorhus/ky @ 3541888878c4
+landable sindresorhus/ky @ 3541888878c4
 
-agentready items
+landable items
   yes  A01.test_command               package.json
   yes  A02.ci_on_pr                   .github/workflows/main.yml
   yes  A03.agent_instructions         AGENTS.md

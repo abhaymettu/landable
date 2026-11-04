@@ -1,6 +1,6 @@
-agentready openai/codex @ 3a2788e6fc89
+landable openai/codex @ 3a2788e6fc89
 
-agentready items
+landable items
   yes  A01.test_command               justfile
   yes  A02.ci_on_pr                   .github/workflows/blocking-ci.yml
   no   A03.agent_instructions         -

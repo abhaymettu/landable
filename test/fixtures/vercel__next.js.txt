@@ -1,6 +1,6 @@
-agentready vercel/next.js @ a47959503ada
+landable vercel/next.js @ a47959503ada
 
-agentready items
+landable items
   yes  A01.test_command               package.json
   yes  A02.ci_on_pr                   .github/workflows/build_and_deploy.yml
   yes  A03.agent_instructions         AGENTS.md

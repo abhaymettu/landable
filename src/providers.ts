@@ -66,7 +66,7 @@ async function snapshotFromGit(cwd: string, commit: string): Promise<Snapshot> {
 
 /** Fetches one commit's trees (no blobs) into a scratch repo, then only the blobs the items read. */
 export async function snapshotAtCommit({ url, commit }: { url: string; commit: string }): Promise<Snapshot> {
-  const dir = await mkdtemp(join(tmpdir(), "agentready-"));
+  const dir = await mkdtemp(join(tmpdir(), "landable-"));
   try {
     await git(dir, ["init", "-q"]);
     await git(dir, ["remote", "add", "origin", url]);

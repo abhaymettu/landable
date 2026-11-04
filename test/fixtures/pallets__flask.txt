@@ -1,6 +1,6 @@
-agentready pallets/flask @ 49943b5a9441
+landable pallets/flask @ 49943b5a9441
 
-agentready items
+landable items
   yes  A01.test_command               pyproject.toml
   yes  A02.ci_on_pr                   .github/workflows/pre-commit.yaml
   no   A03.agent_instructions         -

@@ -1,0 +1,938 @@
+{"t": 1793770941.988538, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4685}
+{"t": 1793770944.611242, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4683}
+{"t": 1793770950.1837, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4682}
+{"t": 1793770952.805832, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4681}
+{"t": 1793770955.503197, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4679}
+{"t": 1793770957.8370712, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4678}
+{"t": 1793770960.241858, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4677}
+{"t": 1793770962.767822, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4676}
+{"t": 1793770965.0596101, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4887}
+{"t": 1793770967.503264, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4675}
+{"t": 1793770970.108981, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4674}
+{"t": 1793770972.734795, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4673}
+{"t": 1793770974.8281112, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4886}
+{"t": 1793770977.639691, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4672}
+{"t": 1793770980.077378, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4671}
+{"t": 1793770982.889083, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4669}
+{"t": 1793770984.7878988, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4884}
+{"t": 1793770987.11831, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4668}
+{"t": 1793770989.73436, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4667}
+{"t": 1793770992.1271691, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4666}
+{"t": 1793770994.421149, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4883}
+{"t": 1793770996.746606, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4665}
+{"t": 1793770998.949528, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4882}
+{"t": 1793771001.431214, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4663}
+{"t": 1793771004.37782, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4662}
+{"t": 1793771006.6011279, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4881}
+{"t": 1793771009.004043, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4661}
+{"t": 1793771011.5907578, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4660}
+{"t": 1793771013.956885, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4880}
+{"t": 1793771016.6395142, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4659}
+{"t": 1793771019.304097, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4658}
+{"t": 1793771021.5401652, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4879}
+{"t": 1793771024.3308978, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4657}
+{"t": 1793771026.736406, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4656}
+{"t": 1793771029.36735, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4655}
+{"t": 1793771031.883282, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4654}
+{"t": 1793771034.650023, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4653}
+{"t": 1793771037.226872, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4652}
+{"t": 1793771039.730359, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4651}
+{"t": 1793771042.74435, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4650}
+{"t": 1793771045.0819929, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4649}
+{"t": 1793771048.227366, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4648}
+{"t": 1793771050.5197031, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4878}
+{"t": 1793771052.7710562, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4647}
+{"t": 1793771055.629937, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4646}
+{"t": 1793771057.945313, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4645}
+{"t": 1793771060.564427, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4644}
+{"t": 1793771063.229158, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4877}
+{"t": 1793771065.370037, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4876}
+{"t": 1793771067.9989948, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4642}
+{"t": 1793771070.773226, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4641}
+{"t": 1793771072.882259, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4875}
+{"t": 1793771075.6832042, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4640}
+{"t": 1793771078.149775, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4639}
+{"t": 1793771081.78546, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4638}
+{"t": 1793771084.744736, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4637}
+{"t": 1793771087.746021, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4636}
+{"t": 1793771090.271311, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4635}
+{"t": 1793771092.535776, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4874}
+{"t": 1793771094.5594938, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4873}
+{"t": 1793771097.036544, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4634}
+{"t": 1793771100.181482, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4633}
+{"t": 1793771102.420882, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4872}
+{"t": 1793771105.068832, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4632}
+{"t": 1793771107.6661, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4631}
+{"t": 1793771109.773841, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4871}
+{"t": 1793771112.0055969, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4870}
+{"t": 1793771114.5171788, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4630}
+{"t": 1793771117.959454, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4629}
+{"t": 1793771120.3610408, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4628}
+{"t": 1793771123.103694, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4627}
+{"t": 1793771126.0603461, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4626}
+{"t": 1793771129.055684, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4625}
+{"t": 1793771131.258495, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4868}
+{"t": 1793771133.573071, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4623}
+{"t": 1793771135.977858, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4622}
+{"t": 1793771138.480011, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4621}
+{"t": 1793771140.926101, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4620}
+{"t": 1793771143.429387, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4619}
+{"t": 1793771146.0636852, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4617}
+{"t": 1793771148.684696, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4616}
+{"t": 1793771150.9898849, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4615}
+{"t": 1793771154.2140002, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4614}
+{"t": 1793771156.850143, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4613}
+{"t": 1793771159.378036, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4866}
+{"t": 1793771162.0019379, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4865}
+{"t": 1793771164.202568, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4864}
+{"t": 1793771167.244204, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4612}
+{"t": 1793771169.416825, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4863}
+{"t": 1793771171.817924, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4611}
+{"t": 1793771174.9119859, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4610}
+{"t": 1793771177.437463, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4609}
+{"t": 1793771179.891902, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4608}
+{"t": 1793771182.639034, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4607}
+{"t": 1793771185.069171, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4605}
+{"t": 1793771187.902146, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4604}
+{"t": 1793771190.330462, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4603}
+{"t": 1793771193.510083, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4602}
+{"t": 1793771195.778572, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4862}
+{"t": 1793771199.024331, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4601}
+{"t": 1793771200.992102, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4861}
+{"t": 1793771203.094476, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4860}
+{"t": 1793771206.38462, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4599}
+{"t": 1793771209.1939561, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4598}
+{"t": 1793771212.027745, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4597}
+{"t": 1793771214.9863229, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4596}
+{"t": 1793771217.4144142, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4595}
+{"t": 1793771219.896353, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4594}
+{"t": 1793771222.818729, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4593}
+{"t": 1793771225.696824, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4592}
+{"t": 1793771227.59368, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4859}
+{"t": 1793771230.251777, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4591}
+{"t": 1793771233.59638, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4590}
+{"t": 1793771236.026586, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4589}
+{"t": 1793771238.5477161, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4588}
+{"t": 1793771241.692786, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4587}
+{"t": 1793771244.506204, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4585}
+{"t": 1793771247.460233, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4583}
+{"t": 1793771250.3531468, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4582}
+{"t": 1793771252.4741518, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4858}
+{"t": 1793771254.649786, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4857}
+{"t": 1793771257.429678, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4581}
+{"t": 1793771260.0685, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4580}
+{"t": 1793771262.875295, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4579}
+{"t": 1793771265.842421, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4578}
+{"t": 1793771268.957412, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4577}
+{"t": 1793771272.1020422, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4576}
+{"t": 1793771274.918088, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4575}
+{"t": 1793771277.87069, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4574}
+{"t": 1793771280.585001, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4573}
+{"t": 1793771283.47314, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4572}
+{"t": 1793771286.2574022, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4571}
+{"t": 1793771289.1374369, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4570}
+{"t": 1793771292.046082, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4569}
+{"t": 1793771295.2311308, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4568}
+{"t": 1793771297.480688, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4855}
+{"t": 1793771300.3065379, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4567}
+{"t": 1793771303.2286289, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4566}
+{"t": 1793771306.373812, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4565}
+{"t": 1793771309.026931, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4853}
+{"t": 1793771311.09838, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4852}
+{"t": 1793771314.047219, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4564}
+{"t": 1793771316.85921, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4562}
+{"t": 1793771320.531422, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4561}
+{"t": 1793771323.385015, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4559}
+{"t": 1793771326.135502, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4558}
+{"t": 1793771328.9232771, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4557}
+{"t": 1793771330.9273028, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4850}
+{"t": 1793771333.637347, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4556}
+{"t": 1793771336.260043, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4555}
+{"t": 1793771338.878925, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4554}
+{"t": 1793771341.30846, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4552}
+{"t": 1793771344.490699, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4551}
+{"t": 1793771347.6133618, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4550}
+{"t": 1793771350.327174, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4549}
+{"t": 1793771353.0368729, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4547}
+{"t": 1793771355.990568, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4546}
+{"t": 1793771359.137014, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4545}
+{"t": 1793771361.27555, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4849}
+{"t": 1793771364.226353, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4544}
+{"t": 1793771367.052417, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4542}
+{"t": 1793771369.684633, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4541}
+{"t": 1793771372.568494, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4540}
+{"t": 1793771375.2521331, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4539}
+{"t": 1793771378.202983, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4538}
+{"t": 1793771380.143643, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4846}
+{"t": 1793771382.204724, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4845}
+{"t": 1793771385.237657, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4537}
+{"t": 1793771388.199029, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4536}
+{"t": 1793771391.477567, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4535}
+{"t": 1793771394.266326, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4534}
+{"t": 1793771397.217757, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4533}
+{"t": 1793771400.231628, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4532}
+{"t": 1793771403.3755252, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4531}
+{"t": 1793771406.323788, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4530}
+{"t": 1793771408.7047539, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4844}
+{"t": 1793771413.8579662, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4529}
+{"t": 1793771416.60381, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4528}
+{"t": 1793771419.516248, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4527}
+{"t": 1793771421.721163, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4843}
+{"t": 1793771423.6267588, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4842}
+{"t": 1793771426.670324, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4526}
+{"t": 1793771429.4149141, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4525}
+{"t": 1793771432.4344919, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4524}
+{"t": 1793771435.244114, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4523}
+{"t": 1793771438.30353, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4522}
+{"t": 1793771440.661707, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4521}
+{"t": 1793771443.2252228, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4520}
+{"t": 1793771446.44635, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4519}
+{"t": 1793771449.01389, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4518}
+{"t": 1793771451.4130821, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4517}
+{"t": 1793771454.6535108, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4516}
+{"t": 1793771457.065544, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4515}
+{"t": 1793771459.2869692, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4841}
+{"t": 1793771462.9990342, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4514}
+{"t": 1793771466.300426, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4513}
+{"t": 1793771469.51215, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4512}
+{"t": 1793771471.860687, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4511}
+{"t": 1793771474.4809642, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4510}
+{"t": 1793771476.916605, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4509}
+{"t": 1793771479.493102, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4508}
+{"t": 1793771481.536631, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4840}
+{"t": 1793771484.3077729, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4507}
+{"t": 1793771486.8841732, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4839}
+{"t": 1793771489.063041, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4838}
+{"t": 1793771491.451576, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4506}
+{"t": 1793771493.474224, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4837}
+{"t": 1793771496.169369, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4505}
+{"t": 1793771498.961219, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4504}
+{"t": 1793771501.9361112, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4836}
+{"t": 1793771503.89947, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4835}
+{"t": 1793771506.303586, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4502}
+{"t": 1793771509.321579, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4501}
+{"t": 1793771511.7053828, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4500}
+{"t": 1793771514.630191, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4499}
+{"t": 1793771517.687458, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4498}
+{"t": 1793771519.953986, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4497}
+{"t": 1793771522.9089122, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4496}
+{"t": 1793771525.223774, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4495}
+{"t": 1793771528.333277, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4494}
+{"t": 1793771530.415703, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4999}
+{"t": 1793771533.397443, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4493}
+{"t": 1793771535.515092, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4998}
+{"t": 1793771538.637254, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4492}
+{"t": 1793771541.456131, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4491}
+{"t": 1793771544.211981, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4490}
+{"t": 1793771546.835009, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4996}
+{"t": 1793771550.003702, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4489}
+{"t": 1793771552.095273, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4995}
+{"t": 1793771554.6964989, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4488}
+{"t": 1793771557.84427, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4487}
+{"t": 1793771560.467672, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4486}
+{"t": 1793771562.9928892, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4485}
+{"t": 1793771565.185546, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4994}
+{"t": 1793771567.806269, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4484}
+{"t": 1793771570.6342888, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4483}
+{"t": 1793771573.128226, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4482}
+{"t": 1793771575.691457, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4481}
+{"t": 1793771578.2907279, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4480}
+{"t": 1793771580.913708, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4479}
+{"t": 1793771583.797311, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4478}
+{"t": 1793771586.6823301, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4477}
+{"t": 1793771588.970405, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4993}
+{"t": 1793771591.3984692, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4476}
+{"t": 1793771593.8666492, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4475}
+{"t": 1793771596.533613, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4474}
+{"t": 1793771598.8255491, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4992}
+{"t": 1793771601.226482, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4473}
+{"t": 1793771603.466781, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4991}
+{"t": 1793771605.8844821, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4472}
+{"t": 1793771608.4576, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4471}
+{"t": 1793771610.532762, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4990}
+{"t": 1793771613.1612911, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4470}
+{"t": 1793771615.530004, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4469}
+{"t": 1793771617.8062358, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4989}
+{"t": 1793771620.237385, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4468}
+{"t": 1793771623.0735822, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4467}
+{"t": 1793771625.478486, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4466}
+{"t": 1793771627.9872892, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4465}
+{"t": 1793771630.389576, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4988}
+{"t": 1793771633.341986, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4464}
+{"t": 1793771637.2078688, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4463}
+{"t": 1793771639.633429, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4462}
+{"t": 1793771641.82237, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4987}
+{"t": 1793771644.624476, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4461}
+{"t": 1793771646.844366, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4460}
+{"t": 1793771649.5948968, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4459}
+{"t": 1793771652.099767, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4458}
+{"t": 1793771654.507085, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4457}
+{"t": 1793771657.0187159, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4456}
+{"t": 1793771659.411478, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4455}
+{"t": 1793771662.254973, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4454}
+{"t": 1793771664.799356, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4453}
+{"t": 1793771667.4551182, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4452}
+{"t": 1793771670.635658, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4451}
+{"t": 1793771673.910862, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4450}
+{"t": 1793771676.5895061, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4449}
+{"t": 1793771679.479512, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4448}
+{"t": 1793771681.3780181, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4986}
+{"t": 1793771684.2022011, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4447}
+{"t": 1793771687.10733, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4446}
+{"t": 1793771689.633294, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4445}
+{"t": 1793771692.941309, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4444}
+{"t": 1793771695.267088, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4985}
+{"t": 1793771698.032203, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4443}
+{"t": 1793771701.040339, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4442}
+{"t": 1793771703.792851, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4441}
+{"t": 1793771706.4122639, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4440}
+{"t": 1793771709.446075, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4438}
+{"t": 1793771712.548816, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4436}
+{"t": 1793771715.135354, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4434}
+{"t": 1793771717.593636, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4984}
+{"t": 1793771720.202514, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4433}
+{"t": 1793771722.732769, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4432}
+{"t": 1793771725.414399, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4431}
+{"t": 1793771727.524566, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4982}
+{"t": 1793771730.576004, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4430}
+{"t": 1793771732.776547, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4429}
+{"t": 1793771735.055893, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4981}
+{"t": 1793771737.580802, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4428}
+{"t": 1793771740.189854, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4427}
+{"t": 1793771742.759501, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4426}
+{"t": 1793771745.300371, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4425}
+{"t": 1793771747.644396, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4424}
+{"t": 1793771750.2622468, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4423}
+{"t": 1793771752.684693, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4422}
+{"t": 1793771755.3621309, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4421}
+{"t": 1793771758.00805, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4420}
+{"t": 1793771760.776482, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4419}
+{"t": 1793771762.8828428, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4980}
+{"t": 1793771765.562019, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4418}
+{"t": 1793771767.561837, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4979}
+{"t": 1793771770.423507, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4417}
+{"t": 1793771772.851629, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4416}
+{"t": 1793771775.804949, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4415}
+{"t": 1793771778.241005, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4414}
+{"t": 1793771780.761944, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4413}
+{"t": 1793771783.310504, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4412}
+{"t": 1793771785.916919, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4411}
+{"t": 1793771788.416624, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4410}
+{"t": 1793771791.156459, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4409}
+{"t": 1793771793.8412008, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4408}
+{"t": 1793771796.295336, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4407}
+{"t": 1793771798.548139, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4978}
+{"t": 1793771800.59216, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4977}
+{"t": 1793771803.011062, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4406}
+{"t": 1793771805.390856, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4404}
+{"t": 1793771808.124563, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4403}
+{"t": 1793771810.101151, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4976}
+{"t": 1793771812.222551, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4975}
+{"t": 1793771814.7655401, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4402}
+{"t": 1793771817.895262, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4401}
+{"t": 1793771820.8679638, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4400}
+{"t": 1793771823.1501482, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4974}
+{"t": 1793771825.2954502, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4973}
+{"t": 1793771827.56435, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4972}
+{"t": 1793771830.346761, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4399}
+{"t": 1793771832.574213, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4971}
+{"t": 1793771835.617355, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4398}
+{"t": 1793771838.3738308, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4397}
+{"t": 1793771841.340487, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4396}
+{"t": 1793771844.516586, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4394}
+{"t": 1793771847.538857, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4392}
+{"t": 1793771849.614225, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4970}
+{"t": 1793771851.9743118, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4969}
+{"t": 1793771854.263544, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4968}
+{"t": 1793771857.4083169, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4967}
+{"t": 1793771860.159243, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4390}
+{"t": 1793771862.838635, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4376}
+{"t": 1793771865.2757068, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4962}
+{"t": 1793771868.2901561, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4369}
+{"t": 1793771871.071977, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4367}
+{"t": 1793771873.9006379, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4365}
+{"t": 1793771876.6152818, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4364}
+{"t": 1793771879.237555, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4363}
+{"t": 1793771881.859095, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4361}
+{"t": 1793771884.8056881, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4359}
+{"t": 1793771887.817951, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4357}
+{"t": 1793771889.932715, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4354}
+{"t": 1793771892.1233149, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4353}
+{"t": 1793771895.2377012, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4351}
+{"t": 1793771898.327355, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4348}
+{"t": 1793771900.4242291, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4957}
+{"t": 1793771902.83087, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4956}
+{"t": 1793771905.449505, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4341}
+{"t": 1793771907.741614, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4338}
+{"t": 1793771910.1695669, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4336}
+{"t": 1793771912.326945, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4953}
+{"t": 1793771915.1576, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4951}
+{"t": 1793771917.252887, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4949}
+{"t": 1793771919.615208, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4948}
+{"t": 1793771921.7946298, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4947}
+{"t": 1793771923.995899, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4946}
+{"t": 1793771926.727364, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4334}
+{"t": 1793771929.2622888, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4332}
+{"t": 1793771931.74441, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4331}
+{"t": 1793771934.3567429, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4330}
+{"t": 1793771936.980599, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4324}
+{"t": 1793771940.249651, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4321}
+{"t": 1793771942.579257, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4945}
+{"t": 1793771945.5672262, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4320}
+{"t": 1793771948.750148, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4319}
+{"t": 1793771951.496305, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4318}
+{"t": 1793771953.878685, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4317}
+{"t": 1793771956.8307788, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4316}
+{"t": 1793771959.462891, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4315}
+{"t": 1793771962.30449, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4944}
+{"t": 1793771964.4268138, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4943}
+{"t": 1793771967.4251258, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4312}
+{"t": 1793771970.318881, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4311}
+{"t": 1793771973.116894, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4308}
+{"t": 1793771975.956023, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4307}
+{"t": 1793771978.691778, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4305}
+{"t": 1793771981.144812, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4939}
+{"t": 1793771984.106911, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4304}
+{"t": 1793771986.9536269, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4303}
+{"t": 1793771989.879306, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4302}
+{"t": 1793771992.1678889, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4938}
+{"t": 1793771995.017014, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4301}
+{"t": 1793771997.099682, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4937}
+{"t": 1793771999.495887, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4936}
+{"t": 1793772002.4521458, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4300}
+{"t": 1793772006.218792, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4935}
+{"t": 1793772009.799659, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4299}
+{"t": 1793772012.408573, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4298}
+{"t": 1793772014.997947, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4297}
+{"t": 1793772017.31648, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4296}
+{"t": 1793772019.946539, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4295}
+{"t": 1793772022.7811751, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4294}
+{"t": 1793772025.5794291, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4934}
+{"t": 1793772028.3277829, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4293}
+{"t": 1793772030.666327, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4933}
+{"t": 1793772033.230994, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4292}
+{"t": 1793772035.817951, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4291}
+{"t": 1793772038.7653491, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4290}
+{"t": 1793772041.250912, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4289}
+{"t": 1793772043.347348, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4932}
+{"t": 1793772045.248738, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4931}
+{"t": 1793772047.671649, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4288}
+{"t": 1793772050.164097, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4287}
+{"t": 1793772052.644772, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4286}
+{"t": 1793772054.9616508, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4930}
+{"t": 1793772056.979438, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4929}
+{"t": 1793772059.125628, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4928}
+{"t": 1793772061.4587069, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4284}
+{"t": 1793772064.316545, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4283}
+{"t": 1793772066.944213, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4282}
+{"t": 1793772069.679125, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4281}
+{"t": 1793772072.7855868, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4280}
+{"t": 1793772074.9919019, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4927}
+{"t": 1793772077.4297779, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4279}
+{"t": 1793772080.0886111, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4926}
+{"t": 1793772083.014095, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4277}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4278}
+{"t": 1793772086.09889, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4276}
+{"t": 1793772088.964542, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4925}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4275}
+{"t": 1793772091.910927, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4274}
+{"t": 1793772094.9202108, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4272}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4273}
+{"t": 1793772098.158593, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4271}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4270}
+{"t": 1793772101.045984, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4269}
+{"t": 1793772104.02274, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4267}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4268}
+{"t": 1793772106.58691, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4924}
+{"t": 1793772109.599413, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4264}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4265}
+{"t": 1793772111.841007, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4923}
+{"t": 1793772115.174342, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4262}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4263}
+{"t": 1793772118.186421, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4261}
+{"t": 1793772120.432472, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4922}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4260}
+{"t": 1793772123.306891, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4258}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4256}
+{"t": 1793772126.257192, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4255}
+{"t": 1793772129.1640792, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4253}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4254}
+{"t": 1793772132.1983879, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4252}
+{"t": 1793772135.1290472, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4250}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4251}
+{"t": 1793772138.148392, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4248}
+{"t": 1793772140.444048, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4920}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4247}
+{"t": 1793772142.9631512, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4919}
+{"t": 1793772145.9855008, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4245}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4246}
+{"t": 1793772149.112524, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4243}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4242}
+{"t": 1793772151.355038, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4918}
+{"t": 1793772154.100215, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4240}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4241}
+{"t": 1793772157.245253, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4239}
+{"t": 1793772160.074442, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4237}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4238}
+{"t": 1793772163.1166809, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4236}
+{"t": 1793772166.106115, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4235}
+{"t": 1793772168.1313741, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4916}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4917}
+{"t": 1793772171.40557, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4234}
+{"t": 1793772174.110077, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4233}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4915}
+{"t": 1793772176.80745, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4232}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4231}
+{"t": 1793772179.7745438, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4230}
+{"t": 1793772182.164247, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4914}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4229}
+{"t": 1793772184.604249, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4913}
+{"t": 1793772187.293323, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4227}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4228}
+{"t": 1793772189.8528361, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4912}
+{"t": 1793772192.25013, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4911}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4226}
+{"t": 1793772195.189104, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4225}
+{"t": 1793772198.022036, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4223}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4224}
+{"t": 1793772200.35476, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4910}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4222}
+{"t": 1793772203.279707, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4221}
+{"t": 1793772206.1863282, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4220}
+{"t": 1793772208.558317, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4909}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4219}
+{"t": 1793772210.726656, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4908}
+{"t": 1793772213.219132, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4907}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4218}
+{"t": 1793772216.2517838, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4217}
+{"t": 1793772218.5424929, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4906}
+{"t": 1793772221.473786, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4215}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4216}
+{"t": 1793772224.321416, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4214}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4213}
+{"t": 1793772227.105035, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4212}
+{"t": 1793772229.879612, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4905}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4211}
+{"t": 1793772232.8358111, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4904}
+{"t": 1793772235.772244, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4209}
+{"t": 1793772238.8554711, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4208}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4210}
+{"t": 1793772241.378515, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4903}
+{"t": 1793772243.84369, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4902}
+{"t": 1793772246.790935, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4206}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4207}
+{"t": 1793772249.773428, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4205}
+{"t": 1793772252.586705, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4203}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4204}
+{"t": 1793772255.444641, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4202}
+{"t": 1793772258.59786, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4200}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4201}
+{"t": 1793772260.942142, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4901}
+{"t": 1793772263.975285, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4198}
+{"t": 1793772266.851278, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4197}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4199}
+{"t": 1793772269.89362, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4196}
+{"t": 1793772272.895508, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4194}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4195}
+{"t": 1793772276.131745, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4193}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4900}
+{"t": 1793772279.278194, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4192}
+{"t": 1793772281.466092, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4899}
+{"t": 1793772283.5207858, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4898}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4190}
+{"t": 1793772286.5206468, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4188}
+{"t": 1793772288.8226619, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4897}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4187}
+{"t": 1793772291.762097, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4186}
+{"t": 1793772294.688739, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4185}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4896}
+{"t": 1793772297.413973, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4184}
+{"t": 1793772300.5145311, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4182}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4183}
+{"t": 1793772303.4182332, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4181}
+{"t": 1793772306.21204, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4180}
+{"t": 1793772308.380712, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4179}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4895}
+{"t": 1793772310.523566, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4894}
+{"t": 1793772312.93315, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4177}
+{"t": 1793772314.756147, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4892}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4893}
+{"t": 1793772317.628174, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4176}
+{"t": 1793772320.3097239, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4174}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4175}
+{"t": 1793772322.956277, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4173}
+{"t": 1793772325.416888, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4171}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4172}
+{"t": 1793772328.036661, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4890}
+{"t": 1793772330.419818, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4169}
+{"t": 1793772332.871974, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4168}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4170}
+{"t": 1793772335.406517, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4167}
+{"t": 1793772337.7076821, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4889}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4166}
+{"t": 1793772340.097237, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4165}
+{"t": 1793772342.7175539, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4163}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4164}
+{"t": 1793772345.1072881, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4162}
+{"t": 1793772347.436904, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4160}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4161}
+{"t": 1793772350.058617, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4159}
+{"t": 1793772352.496279, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4158}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4888}
+{"t": 1793772355.0387251, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4157}
+{"t": 1793772357.145973, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4886}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4887}
+{"t": 1793772359.728342, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4156}
+{"t": 1793772362.324342, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4155}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4885}
+{"t": 1793772364.9367309, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4154}
+{"t": 1793772367.5387478, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4152}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4153}
+{"t": 1793772369.685913, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4884}
+{"t": 1793772372.276271, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4150}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4151}
+{"t": 1793772374.917817, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4149}
+{"t": 1793772377.168148, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4883}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4148}
+{"t": 1793772379.4163551, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4882}
+{"t": 1793772381.607279, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4881}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4146}
+{"t": 1793772384.264508, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4144}
+{"t": 1793772386.66331, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4143}
+{"t": 1793772389.2274501, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4142}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4880}
+{"t": 1793772391.547893, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4879}
+{"t": 1793772394.0967271, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4138}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4139}
+{"t": 1793772396.486059, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4137}
+{"t": 1793772398.912748, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4136}
+{"t": 1793772401.2093709, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4135}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4877}
+{"t": 1793772403.535329, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4876}
+{"t": 1793772406.292268, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4874}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4875}
+{"t": 1793772408.6679199, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4133}
+{"t": 1793772411.250515, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4131}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4132}
+{"t": 1793772413.891474, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4130}
+{"t": 1793772416.642812, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4127}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4873}
+{"t": 1793772418.826921, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4871}
+{"t": 1793772421.5147378, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4125}
+{"t": 1793772423.9858282, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4124}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4870}
+{"t": 1793772426.686333, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4123}
+{"t": 1793772429.052733, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4869}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4122}
+{"t": 1793772431.615573, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4121}
+{"t": 1793772433.975272, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4119}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4120}
+{"t": 1793772436.2986119, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4868}
+{"t": 1793772439.060168, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4117}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4118}
+{"t": 1793772441.4732149, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4116}
+{"t": 1793772444.082985, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4114}
+{"t": 1793772446.538552, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4113}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4115}
+{"t": 1793772449.0520551, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4111}
+{"t": 1793772451.489752, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4109}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4110}
+{"t": 1793772453.405047, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4866}
+{"t": 1793772455.980296, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4865}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4108}
+{"t": 1793772458.585707, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4105}
+{"t": 1793772461.2070332, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4103}
+{"t": 1793772463.829176, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4101}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4863}
+{"t": 1793772466.253655, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4862}
+{"t": 1793772468.553254, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4098}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4861}
+{"t": 1793772471.014297, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4095}
+{"t": 1793772473.450932, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4093}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4094}
+{"t": 1793772476.196706, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4092}
+{"t": 1793772478.646303, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4091}
+{"t": 1793772481.131409, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4089}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4858}
+{"t": 1793772483.7509062, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4857}
+{"t": 1793772486.250033, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4085}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4086}
+{"t": 1793772488.7525702, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4084}
+{"t": 1793772491.321755, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4082}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4083}
+{"t": 1793772493.7139258, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4081}
+{"t": 1793772496.336889, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4080}
+{"t": 1793772498.873972, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4079}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4856}
+{"t": 1793772501.6408892, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4078}
+{"t": 1793772504.402087, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4076}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4077}
+{"t": 1793772506.404351, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4855}
+{"t": 1793772508.975849, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4074}
+{"t": 1793772510.896747, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4854}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4075}
+{"t": 1793772513.3853939, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4071}
+{"t": 1793772515.901388, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4069}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4070}
+{"t": 1793772518.639497, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4068}
+{"t": 1793772521.324337, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4066}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4067}
+{"t": 1793772523.824714, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4065}
+{"t": 1793772525.906027, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4852}
+{"t": 1793772528.3186402, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4064}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4853}
+{"t": 1793772530.142019, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4851}
+{"t": 1793772532.510379, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4850}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4063}
+{"t": 1793772535.3480399, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4062}
+{"t": 1793772538.028067, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4849}
+{"t": 1793772540.6375968, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4059}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4060}
+{"t": 1793772542.835487, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4848}
+{"t": 1793772545.705482, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4057}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4058}
+{"t": 1793772548.764595, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4055}
+{"t": 1793772550.9760451, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4841}
+{"t": 1793772553.3817012, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4840}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4050}
+{"t": 1793772555.936447, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4045}
+{"t": 1793772558.7521439, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4043}
+{"t": 1793772561.611715, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4042}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4044}
+{"t": 1793772564.2055109, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4839}
+{"t": 1793772567.1466188, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4040}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4041}
+{"t": 1793772570.261506, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4039}
+{"t": 1793772573.4111428, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4037}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4038}
+{"t": 1793772575.615882, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4838}
+{"t": 1793772578.450002, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4032}
+{"t": 1793772580.8283179, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4027}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4836}
+{"t": 1793772583.516402, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4022}
+{"t": 1793772585.8739781, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4832}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4019}
+{"t": 1793772589.202589, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4018}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4831}
+{"t": 1793772591.637124, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4015}
+{"t": 1793772593.885957, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4830}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4014}
+{"t": 1793772596.286625, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4829}
+{"t": 1793772598.946611, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4012}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4013}
+{"t": 1793772602.595011, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4009}
+{"t": 1793772605.280374, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4826}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4008}
+{"t": 1793772607.884335, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4825}
+{"t": 1793772610.7573462, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4824}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4007}
+{"t": 1793772614.534534, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4003}
+{"t": 1793772617.7151942, "kind": "meta", "repos": 10, "cost": 1, "remaining": 3998}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4000}
+{"t": 1793772621.131778, "kind": "meta", "repos": 10, "cost": 1, "remaining": 3994}
+{"t": 1793772623.799685, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4820}
+{"t": 1793772626.5789728, "kind": "meta", "repos": 10, "cost": 1, "remaining": 3990}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4821}
+{"t": 1793772629.94398, "kind": "meta", "repos": 10, "cost": 1, "remaining": 3988}
+{"t": 1793772632.6667578, "kind": "meta", "repos": 10, "cost": 1, "remaining": 3982}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 3985}
+{"t": 1793772635.3178601, "kind": "meta", "repos": 10, "cost": 1, "remaining": 3977}
+{"t": 1793772639.054782, "kind": "meta", "repos": 10, "cost": 1, "remaining": 3973}
+{"t": 1793772642.438418, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4999}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4815}
+{"t": 1793772644.985156, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4996}
+{"t": 1793772647.463254, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4992}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4995}
+{"t": 1793772650.252058, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4989}
+{"t": 1793772653.368466, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4985}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4988}
+{"t": 1793772656.466182, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4982}
+{"t": 1793772659.660396, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4978}
+{"t": 1793772661.891157, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4975}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4979}
+{"t": 1793772664.451703, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4972}
+{"t": 1793772666.874519, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4970}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4971}
+{"t": 1793772669.440088, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4969}
+{"t": 1793772671.9743512, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4968}
+{"t": 1793772675.1667352, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4967}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4814}
+{"t": 1793772677.391884, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4813}
+{"t": 1793772679.7124228, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4965}
+{"t": 1793772682.145758, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4964}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4966}
+{"t": 1793772685.129156, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4963}
+{"t": 1793772687.439411, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4961}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4962}
+{"t": 1793772690.497916, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4960}
+{"t": 1793772693.066313, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4958}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4959}
+{"t": 1793772696.332835, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4956}
+{"t": 1793772698.548057, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4810}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4954}
+{"t": 1793772701.4561899, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4953}
+{"t": 1793772703.588902, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4952}
+{"t": 1793772706.058413, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4807}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4809}
+{"t": 1793772708.360272, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4950}
+{"t": 1793772711.307893, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4949}
+{"t": 1793772713.7005298, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4948}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4806}
+{"t": 1793772716.2918038, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4805}
+{"t": 1793772719.755858, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4947}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4804}
+{"t": 1793772722.6533198, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4946}
+{"t": 1793772727.121202, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4944}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4945}
+{"t": 1793772730.489878, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4943}
+{"t": 1793772733.391617, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4941}
+{"t": 1793772736.4646652, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4940}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4942}
+{"t": 1793772739.095833, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4803}
+{"t": 1793772741.960265, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4938}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4939}
+{"t": 1793772745.2301528, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4937}
+{"t": 1793772748.247992, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4935}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4936}
+{"t": 1793772750.918188, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4933}
+{"t": 1793772753.596044, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4931}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4932}
+{"t": 1793772757.306178, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4930}
+{"t": 1793772760.276344, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4928}
+{"t": 1793772763.3161442, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4927}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4929}
+{"t": 1793772767.2034009, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4926}
+{"t": 1793772771.382899, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4802}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4925}
+{"t": 1793772775.040669, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4924}
+{"t": 1793772778.157749, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4923}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4801}
+{"t": 1793772781.047335, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4922}
+{"t": 1793772783.733839, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4921}
+{"t": 1793772786.477546, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4920}
+{"t": 1793772788.971618, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4919}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4800}
+{"t": 1793772791.2596722, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4799}
+{"t": 1793772794.505096, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4916}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4918}
+{"t": 1793772798.0580502, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4915}
+{"t": 1793772800.957651, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4797}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4914}
+{"t": 1793772803.657115, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4913}
+{"t": 1793772808.651693, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4912}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4796}
+{"t": 1793772811.688643, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4794}
+{"t": 1793772815.3666089, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4909}
+{"t": 1793772818.57989, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4793}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4910}
+{"t": 1793772821.8228061, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4908}
+{"t": 1793772825.217483, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4792}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4907}
+{"t": 1793772828.091764, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4791}
+{"t": 1793772831.049068, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4905}
+{"t": 1793772833.7153542, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4904}
+{"kind": "ci", "prs": 40, "cost": 1, "remaining": 4906}
+{"t": 1793772836.6266549, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4903}
+{"t": 1793772839.42157, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4790}
+{"t": 1793772842.257927, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4902}
+{"t": 1793772845.916296, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4901}
+{"t": 1793772849.7151942, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4900}
+{"t": 1793772853.258985, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4899}
+{"t": 1793772857.93424, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4789}
+{"t": 1793772861.651993, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4898}
+{"t": 1793772865.196026, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4897}
+{"t": 1793772868.6020758, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4896}
+{"t": 1793772871.740809, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4895}
+{"t": 1793772875.6349819, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4894}
+{"t": 1793772879.951246, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4893}
+{"t": 1793772883.0835369, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4788}
+{"t": 1793772887.714418, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4892}
+{"t": 1793772891.46092, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4891}
+{"t": 1793772894.4254138, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4889}
+{"t": 1793772898.076323, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4887}
+{"t": 1793772901.3528059, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4883}
+{"t": 1793772904.467561, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4882}
+{"t": 1793772907.432082, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4784}
+{"t": 1793772910.346883, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4874}
+{"t": 1793772913.726985, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4782}
+{"t": 1793772916.0618591, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4781}
+{"t": 1793772918.7216609, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4779}
+{"t": 1793772921.864631, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4873}
+{"t": 1793772925.080545, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4871}
+{"t": 1793772928.73734, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4870}
+{"t": 1793772931.615423, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4778}
+{"t": 1793772934.811028, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4777}
+{"t": 1793772938.1654, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4869}
+{"t": 1793772941.321283, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4776}
+{"t": 1793772944.461602, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4775}
+{"t": 1793772946.963279, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4868}
+{"t": 1793772949.4201012, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4867}
+{"t": 1793772952.0115452, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4866}
+{"t": 1793772954.9228501, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4865}
+{"t": 1793772957.572494, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4863}
+{"t": 1793772960.342412, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4861}
+{"t": 1793772962.825803, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4860}
+{"t": 1793772966.39434, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4857}
+{"t": 1793772968.9182138, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4854}
+{"t": 1793772971.205803, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4771}
+{"t": 1793772974.499846, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4851}
+{"t": 1793772976.872712, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4847}
+{"t": 1793772979.3997471, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4844}
+{"t": 1793772981.996778, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4765}
+{"t": 1793772985.063814, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4841}
+{"t": 1793772988.696289, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4840}
+{"t": 1793772991.400758, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4839}
+{"t": 1793772994.021127, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4762}
+{"t": 1793772996.5148969, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4838}
+{"t": 1793772999.043956, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4836}
+{"t": 1793773002.0250208, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4835}
+{"t": 1793773005.306773, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4834}
+{"t": 1793773008.1010182, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4831}
+{"t": 1793773010.667897, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4829}
+{"t": 1793773014.427534, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4828}
+{"t": 1793773017.1517031, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4826}
+{"t": 1793773019.573843, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4760}
+{"t": 1793773022.2208052, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4825}
+{"t": 1793773024.964035, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4824}
+{"t": 1793773027.264652, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4823}
+{"t": 1793773029.646434, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4822}
+{"t": 1793773032.301918, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4821}
+{"t": 1793773034.746433, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4820}
+{"t": 1793773037.421765, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4819}
+{"t": 1793773039.815246, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4818}
+{"t": 1793773042.293298, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4759}
+{"t": 1793773044.738674, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4817}
+{"t": 1793773047.355668, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4816}
+{"t": 1793773049.8112068, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4815}
+{"t": 1793773052.298141, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4813}
+{"t": 1793773054.887062, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4812}
+{"t": 1793773057.6495628, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4758}
+{"t": 1793773060.1487849, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4811}
+{"t": 1793773062.558209, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4810}
+{"t": 1793773065.1805298, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4809}
+{"t": 1793773067.6155362, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4757}
+{"t": 1793773069.901052, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4756}
+{"t": 1793773072.586407, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4755}
+{"t": 1793773074.861961, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4808}
+{"t": 1793773077.076213, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4807}
+{"t": 1793773079.625221, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4806}
+{"t": 1793773082.232459, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4805}
+{"t": 1793773084.6506739, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4754}
+{"t": 1793773087.205407, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4751}
+{"t": 1793773089.825186, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4804}
+{"t": 1793773091.7820082, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4750}
+{"t": 1793773095.116731, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4803}
+{"t": 1793773097.4807072, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4802}
+{"t": 1793773100.58714, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4749}
+{"t": 1793773103.01192, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4801}
+{"t": 1793773105.555008, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4800}
+{"t": 1793773108.748776, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4748}
+{"t": 1793773111.056442, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4799}
+{"t": 1793773113.5521338, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4798}
+{"t": 1793773116.03942, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4797}
+{"t": 1793773118.746433, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4796}
+{"t": 1793773121.314532, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4795}
+{"t": 1793773123.5261009, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4747}
+{"t": 1793773126.0876842, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4794}
+{"t": 1793773128.478327, "kind": "meta", "repos": 10, "cost": 1, "remaining": 4793}
+{"t": 1793773130.3110049, "kind": "meta", "repos": 7, "cost": 1, "remaining": 4792}

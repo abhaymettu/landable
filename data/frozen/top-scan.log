@@ -1,0 +1,9 @@
+{"t":"2026-11-04T05:59:21.579Z","done":100,"failed":0,"left":898,"last_ms":833,"rate_per_min":197}
+{"t":"2026-11-04T05:59:51.003Z","done":200,"failed":0,"left":798,"last_ms":699,"rate_per_min":200}
+{"t":"2026-11-04T06:00:21.638Z","done":300,"failed":0,"left":698,"last_ms":790,"rate_per_min":199}
+{"t":"2026-11-04T06:00:49.737Z","done":400,"failed":0,"left":598,"last_ms":964,"rate_per_min":202}
+{"t":"2026-11-04T06:01:22.859Z","done":500,"failed":0,"left":498,"last_ms":913,"rate_per_min":198}
+{"t":"2026-11-04T06:04:29.493Z","done":99,"failed":1,"left":389,"last_ms":816,"rate_per_min":138}
+{"t":"2026-11-04T06:04:55.457Z","done":199,"failed":1,"left":289,"last_ms":666,"rate_per_min":173}
+{"t":"2026-11-04T06:05:21.770Z","done":299,"failed":1,"left":189,"last_ms":653,"rate_per_min":188}
+{"t":"2026-11-04T06:05:48.398Z","done":399,"failed":1,"left":89,"last_ms":823,"rate_per_min":196}
